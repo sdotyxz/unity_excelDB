@@ -20,7 +20,8 @@ public class NewBehaviourScript : MonoBehaviour
 	void XLSX()
 	{
 		//FileStream stream = File.Open(Application.dataPath + "/UserLevel.xlsx", FileMode.Open, FileAccess.Read);
-		FileStream stream = File.Open(Application.dataPath + "/AVCARDDB.xlsx", FileMode.Open, FileAccess.Read);
+		//FileStream stream = File.Open(Application.dataPath + "/AVCARDDB.xlsx", FileMode.Open, FileAccess.Read);
+		FileStream stream = File.Open(Application.dataPath + "/AVCARDDB.xlsx", FileMode.Open);
 		IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
 	
 		DataSet result = excelReader.AsDataSet();

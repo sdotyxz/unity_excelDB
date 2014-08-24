@@ -19,11 +19,11 @@ public class ReadAndBuild : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 		XLSX();
-		//BuildCSharp();
+		BuildCSharp();
 //		GenerateXml();
 //		UpdateXml();
 //		AddXml();
-		deleteXml();
+		//deleteXml();
 	}
 	
 	// Update is called once per frame
@@ -33,12 +33,13 @@ public class ReadAndBuild : MonoBehaviour
 
 	void XLSX()
 	{
-		FileStream stream = File.Open(Application.dataPath + "/AVCARDDB.xlsx", FileMode.Open, FileAccess.Read);
+		FileStream stream = File.Open(Application.dataPath + Resconfig.RES_EXCEL + "AVCARDDB.xlsx", FileMode.Open);
+		//FileStream stream = File.Open(Application.dataPath + "/AVCARDDB.xlsx", FileMode.Open);
 		IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
 		
 		exceldataset = excelReader.AsDataSet();
-		fileName = exceldataset.Tables[0].TableName + ".xml";
-		pathstring = Path.Combine(Application.dataPath, fileName);
+		fileName = Resconfig.RES_SCRIPT + exceldataset.Tables[0].TableName + ".cs";
+		pathstring = Application.dataPath + fileName;//Path.Combine(Application.dataPath, fileName);
 	}
 
 	void BuildCSharp()
