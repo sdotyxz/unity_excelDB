@@ -9,8 +9,6 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using Excel;
 using UnityEngine;
-using System.Collections.Generic;
-
 
 public class ReadAndBuild : MonoBehaviour 
 {
