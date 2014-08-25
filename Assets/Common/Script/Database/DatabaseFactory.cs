@@ -54,7 +54,6 @@ public class DatabaseEntryFactory
 		else
 		{
 			Debug.LogError("Unknown Database Entry type: " + entryTypeName);
-			
 			return null;
 		}
 	}
