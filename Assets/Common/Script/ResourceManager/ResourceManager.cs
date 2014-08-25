@@ -310,7 +310,6 @@ public class ResourceManager : MonoBehaviour
             }
 
             AssetDatabase.SaveAssets();
-
             Debug.Log("Built bundle: " + info.Name);
         }
     }
