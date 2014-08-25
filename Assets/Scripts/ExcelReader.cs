@@ -18,4 +18,10 @@ public class ExcelReader
 		IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
 		return excelReader.AsDataSet();
 	}
+
+	public static string ExcelName(string filename)
+	{
+		string[] words = filename.Split('.');
+		return words[0];
+	}
 }

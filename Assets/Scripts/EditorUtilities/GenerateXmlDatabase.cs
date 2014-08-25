@@ -16,12 +16,9 @@ using UnityEditor;
 public class GenerateXmlDatabase : MonoBehaviour 
 {
 	private static DataSet xmldatasource;
+	private static string excelName = "";
 	private static string filename = "";
 	private static string filepath = "";
-
-	void Start()
-	{
-	}
 
     private static void GenerateXml(string path)
 	{
@@ -32,7 +29,7 @@ public class GenerateXmlDatabase : MonoBehaviour
 			
 			// Create first node - Root
 			XmlElement root = xmlDoc.CreateElement("Database");
-			XmlComment comment = xmlDoc.CreateComment("Card Infos");
+			XmlComment comment = xmlDoc.CreateComment(excelName);
 
 			root.AppendChild(comment);
 			xmlDoc.AppendChild(root);
@@ -52,8 +49,8 @@ public class GenerateXmlDatabase : MonoBehaviour
 
 			int rownum = dataset.Tables[0].Rows.Count;
 			int columnnum = dataset.Tables[0].Columns.Count;
-			string elementName = "CardInfos";
-			string AttributeName = dataset.Tables[0].Rows[0][0].ToString();
+			string elementName = excelName;
+			string AttributeName = "ID";//dataset.Tables[0].Rows[0][0].ToString();
 			string AttributeValue = "";
 			for(int i = 1; i < rownum; i++)
 			{
@@ -65,7 +62,7 @@ public class GenerateXmlDatabase : MonoBehaviour
 					Debug.Log ("------ Add New Node ------");
 					XmlElement elmNew = xmlDoc.CreateElement(elementName);
 					elmNew.SetAttribute(AttributeName, AttributeValue);
-					for(int j = 1; j < columnnum; j++)
+					for(int j = 0; j < columnnum; j++)
 					{
 						XmlElement columnElement = xmlDoc.CreateElement(dataset.Tables[0].Rows[0][j].ToString());
 						columnElement.InnerText = dataset.Tables[0].Rows[i][j].ToString();
@@ -113,7 +110,9 @@ public class GenerateXmlDatabase : MonoBehaviour
 	{
 		Debug.Log ("------ GenerateXMLDatabase ------");
 		xmldatasource = ExcelReader.XLSX(Resconfig.RES_EXCEL_FILE_1);
-		filename = xmldatasource.Tables[0].TableName + ".xml";
+		excelName = ExcelReader.ExcelName(Resconfig.RES_EXCEL_FILE_1);
+		string tempName = excelName.Replace("Info", "Data");
+		filename = tempName + ".xml";
 		filepath = Application.dataPath + Resconfig.RES_XML + filename;
 		GenerateXml(filepath);
 		FillXml(filepath, xmldatasource);

@@ -208,10 +208,10 @@ public class ReadAndBuild : MonoBehaviour
 			switch(datatype)
 			{
 				case "System.String":
-				classPorperty += "    public string " + dataset.Tables[0].Rows[0][i].ToString() + ";\n";
+				classPorperty += "    public string " + dataset.Tables[0].Rows[0][i].ToString() + ";\n\n";
 					break;
 				case "System.Double":
-				classPorperty += "    public int " + dataset.Tables[0].Rows[0][i].ToString() + ";\n";
+				classPorperty += "    public int " + dataset.Tables[0].Rows[0][i].ToString() + ";\n\n";
 					break;
 			}
 		}

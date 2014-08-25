@@ -1,6 +1,7 @@
 <Database>
-  <!--Card Infos-->
-  <CardInfos CardNo="B1-006">
+  <!--CardInfo-->
+  <CardInfo ID="B1-006">
+    <CardNo>B1-006</CardNo>
     <CardName>学級委員　琴吹文</CardName>
     <Rare>C</Rare>
     <Type>PG</Type>
@@ -17,8 +18,9 @@
     <Strike>2</Strike>
     <Illustrator>七</Illustrator>
     <TextureResource>AVST1/B1-006</TextureResource>
-  </CardInfos>
-  <CardInfos CardNo="B1-007">
+  </CardInfo>
+  <CardInfo ID="B1-007">
+    <CardNo>B1-007</CardNo>
     <CardName>ゲーマー少女　琴吹文</CardName>
     <Rare>C</Rare>
     <Type>PG</Type>
@@ -35,8 +37,9 @@
     <Strike>1</Strike>
     <Illustrator>七</Illustrator>
     <TextureResource>AVST1/B1-007</TextureResource>
-  </CardInfos>
-  <CardInfos CardNo="B1-008">
+  </CardInfo>
+  <CardInfo ID="B1-008">
+    <CardNo>B1-008</CardNo>
     <CardName>全国ランカー　琴吹文</CardName>
     <Rare>U</Rare>
     <Type>PG</Type>
@@ -53,8 +56,9 @@
     <Strike>1</Strike>
     <Illustrator>七</Illustrator>
     <TextureResource>AVST1/B1-008</TextureResource>
-  </CardInfos>
-  <CardInfos CardNo="B1-009">
+  </CardInfo>
+  <CardInfo ID="B1-009">
+    <CardNo>B1-009</CardNo>
     <CardName>後輩　佐久良舞衣菜</CardName>
     <Rare>U</Rare>
     <Type>PG</Type>
@@ -71,8 +75,9 @@
     <Strike>0</Strike>
     <Illustrator>一葉モカ</Illustrator>
     <TextureResource>AVST1/B1-009</TextureResource>
-  </CardInfos>
-  <CardInfos CardNo="B1-016">
+  </CardInfo>
+  <CardInfo ID="B1-016">
+    <CardNo>B1-016</CardNo>
     <CardName>陸上部　土屋原はねる</CardName>
     <Rare>C</Rare>
     <Type>PG</Type>
@@ -89,5 +94,5 @@
     <Strike>1</Strike>
     <Illustrator>ニリツ</Illustrator>
     <TextureResource>AVST1/B1-016</TextureResource>
-  </CardInfos>
+  </CardInfo>
 </Database>
