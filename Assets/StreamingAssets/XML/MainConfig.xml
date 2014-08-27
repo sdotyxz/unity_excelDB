@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <!--Excel Source and define-->
+  <excels>
+    <excel name="CardInfo" excel_file="CardInfo.xlsx" />
+    <excel name="UserLevel" excel_file="UserLevel.xlsx" />
+  </excels>
+  <defines>
+    <define file="AssetData.xml" />
+    <define file="CardData.xml" />
+    <define file="MainConfig.xml" />
+    <define file="MapData.xml" />
+  </defines>
+</root>

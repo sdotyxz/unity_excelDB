@@ -26,12 +26,15 @@ public class GenerateXmlDatabase : MonoBehaviour
 		{
 			// Create a XMLDoucment
 			XmlDocument xmlDoc = new XmlDocument();
-			
+
+
 			// Create first node - Root
 			XmlElement root = xmlDoc.CreateElement("Database");
 			XmlComment comment = xmlDoc.CreateComment(excelName);
+			XmlDeclaration declaration = xmlDoc.CreateXmlDeclaration("1.0", "UTF-8", "");
 
 			root.AppendChild(comment);
+			xmlDoc.AppendChild(declaration);
 			xmlDoc.AppendChild(root);
 			
 			// Save XML
