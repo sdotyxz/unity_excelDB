@@ -43,6 +43,7 @@ public class GenerateDataClass : MonoBehaviour
 		List<FileInfo> excelfileInfolist = new List<FileInfo>();
 		List<DataSet> execldatalist = new List<DataSet>();
 		FileInfo[] excelfileInfo = excelFolder.GetFiles();
+		List<string> classnamelist = new List<string>();
 		foreach(FileInfo file in excelfileInfo)
 		{
 			if(file.Extension == ".xlsx")
@@ -63,8 +64,14 @@ public class GenerateDataClass : MonoBehaviour
 				string renderfilePath = Application.dataPath +Resconfig.RES_EDITOR_RENDER + renderfileName;
 				GenerateClassFile(renderfilePath);
 				FillRenderClass(renderfilePath, datasource, file.Name.Replace(file.Extension, ""));
+
+				classnamelist.Add(file.Name.Replace(file.Extension, ""));
 			}
 		}
+
+		string DataRenderFilePath = Application.dataPath + Resconfig.RES_EDITOR + "DataRender.cs";
+		GenerateClassFile(DataRenderFilePath);
+		FillDataRender(DataRenderFilePath, classnamelist);
 		AssetDatabase.Refresh();
 	}
 
@@ -75,6 +82,51 @@ public class GenerateDataClass : MonoBehaviour
 			FileStream filestream = new FileStream(path, FileMode.CreateNew, FileAccess.ReadWrite);
 			filestream.Close();
 		}
+	}
+
+	private static void FillDataRender(string path, List<string> classnamelist)
+	{
+		if(File.Exists(path))
+		{
+			FileStream filestream = File.Open(path, FileMode.Open);
+			StreamWriter streamWriter = new StreamWriter(filestream);
+			string DataRenderTpl = getDataRenderTpl(classnamelist);
+			streamWriter.Flush();
+			streamWriter.Write(DataRenderTpl);
+			streamWriter.Close();
+		}
+	}
+
+	private static string getDataRenderTpl(List<string> classnamelist)
+	{
+		string dataRenderTpl = 
+				"using UnityEngine;\n" +
+				"using UnityEditor;\n" +
+				"using System.IO;\n" +
+				"using System.Collections;\n" +
+				"using System.Collections.Generic;\n" +
+				"using Config;\n" +
+				"\n" +
+				"public class DataRender : ScriptableObject {\n" +
+				"\t[MenuItem(\"ExcelDatabase/Render Data\")]\n" +
+				"\tstatic void render()\n" +
+				"\t{\n" +
+				"\t\tAssetUtility.Init();\n" + getDataRenderQueue(classnamelist) + 
+				"\t}\n" +
+				"}";
+		return dataRenderTpl;
+	}
+
+	private static string getDataRenderQueue(List<string> classnamelist)
+	{
+		string dataRenderQueue = "";
+		foreach(string classname in classnamelist)
+		{
+			dataRenderQueue += 
+				"\t\t" + classname + "DataEntity " + classname.ToLower() + "data = " + classname + "DataRender.Render();\n" +
+				"\t\tAssetUtility.CreateAsset<" + classname + "DataEntity>(" + classname.ToLower() + "data);\n"; 
+		}
+		return dataRenderQueue;
 	}
 
 	private static void FillRenderClass(string path, DataSet datasource, string className)
@@ -93,17 +145,44 @@ public class GenerateDataClass : MonoBehaviour
 	private static string getRenderClassTpl(DataSet datasource, string className)
 	{
 		string renderClassTpl = 
-				"using System.IO;\n" +
+				"using System;\n" +
 				"using System.Collections.Generic;\n" +
+				"using System.Data;\n" + 
+				"using System.IO;\n" +
+				"using System.Reflection;\n" +
 				"using Config;\n" +
+				"using UnityEditor;\n" +
+				"using UnityEngine;\n" +
 				"class " + className + "DataRender\n" +
 				"{\n" +
 				"\tstatic public " + className + "DataEntity Render()\n" +
 				"\t{\n" +
 				"\t\t" + className + "DataEntity entity = AssetUtility.CreateInstance<" + className + "DataEntity> ();\n" +
 				"\t\tList<" + className + "> data = new List<" + className + ">();\n" +
+				"\t\tRenderExcelData(data);\n" +
 				"\t\tentity.data = data;\n" +
 				"\t\treturn entity;\n" +
+				"\t}\n" +
+				"\n" +
+				"\tprivate static void RenderExcelData(List<" + className + "> data)\n" +
+				"\t{\n" +
+				"\t\tDataSet datasource = ExcelReader.XLSX(\"" + className + ".xlsx\");\n" +
+				"\t\tfor(int t = 0; t < datasource.Tables.Count; t++)\n" +
+				"\t\t{\n" +
+				"\t\t\tint columnnum = datasource.Tables[t].Columns.Count;\n" +
+				"\t\t\tfor(int r = 1; r < datasource.Tables[t].Rows.Count; r++)\n" +
+				"\t\t\t{\n" +
+				"\t\t\t\t" + className + " info = new " + className + "();\n" +
+				"\t\t\t\tfor(int c = 0; c < columnnum; c++)\n" +
+				"\t\t\t\t{\n" +
+				"\t\t\t\t\tFieldInfo field = info.GetType().GetField(datasource.Tables[t].Rows[0][c].ToString());\n" +
+				"\t\t\t\t\tType type = field.FieldType;\n" +
+				"\t\t\t\t\tobject columnvalue = Convert.ChangeType(datasource.Tables[t].Rows[r][c], type);\n" +
+				"\t\t\t\t\tfield.SetValue(info, columnvalue);\n" +
+				"\t\t\t\t}\n" +
+				"\t\t\t\tdata.Add(info);\n" +
+				"\t\t\t}\n" +
+				"\t\t}\n" +
 				"\t}\n" +
 				"}"; 
 		return renderClassTpl;

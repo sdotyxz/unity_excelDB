@@ -19,6 +19,12 @@ public class ExcelReader
 		return excelReader.AsDataSet();
 	}
 
+	public static DataSet ReadExcel(string classname)
+	{
+		string filename = classname + ".xlsx";
+		return XLSX(filename);
+	}
+
 	public static string ExcelName(string filename)
 	{
 		string[] words = filename.Split('.');

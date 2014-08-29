@@ -1,12 +1,11 @@
 using System;
-using System.IO;
-using System.Data;
-using System.Reflection;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Reflection;
 using Config;
-using UnityEngine;
 using UnityEditor;
-
+using UnityEngine;
 class CardInfoDataRender
 {
 	static public CardInfoDataEntity Render()

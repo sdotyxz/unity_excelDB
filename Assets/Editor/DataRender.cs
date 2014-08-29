@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections;
@@ -10,7 +10,7 @@ public class DataRender : ScriptableObject {
 	static void render()
 	{
 		AssetUtility.Init();
-		CardInfoDataEntity cardinfoentity = CardInfoDataRender.Render();
-		AssetUtility.CreateAsset<CardInfoDataEntity>(cardinfoentity);
+		CardInfoDataEntity cardinfodata = CardInfoDataRender.Render();
+		AssetUtility.CreateAsset<CardInfoDataEntity>(cardinfodata);
 	}
 }

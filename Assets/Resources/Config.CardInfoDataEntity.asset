@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f4a4cf7be406e4aa5e70b50aa5bbe5, type: 3}
+  m_Script: {fileID: 11500000, guid: d2251658e05068849ba424888a1f822a, type: 3}
   m_Name: Config.CardInfoDataEntity
   m_EditorClassIdentifier: 
   data:
@@ -28,7 +28,7 @@ MonoBehaviour:
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 2
     Illustrator: "\u4E03"
-    TextureResource: AVST1/B1-006
+    TextureResource: AVST1/B1-006.6
   - CardNo: B1-007
     CardName: "\u30B2\u30FC\u30DE\u30FC\u5C11\u5973\u3000\u7434\u5439\u6587"
     Rare: C
@@ -46,7 +46,7 @@ MonoBehaviour:
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
     Illustrator: "\u4E03"
-    TextureResource: AVST1/B1-007
+    TextureResource: AVST1/B1-007.7
   - CardNo: B1-008
     CardName: "\u5168\u56FD\u30E9\u30F3\u30AB\u30FC\u3000\u7434\u5439\u6587"
     Rare: U
@@ -64,7 +64,7 @@ MonoBehaviour:
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
     Illustrator: "\u4E03"
-    TextureResource: AVST1/B1-008
+    TextureResource: AVST1/B1-008.8
   - CardNo: B1-009
     CardName: "\u5F8C\u8F29\u3000\u4F50\u4E45\u826F\u821E\u8863\u83DC"
     Rare: U
@@ -81,7 +81,7 @@ MonoBehaviour:
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 0
     Illustrator: "\u4E00\u8449\u30E2\u30AB"
-    TextureResource: AVST1/B1-009
+    TextureResource: AVST1/B1-009.9
   - CardNo: B1-016
     CardName: "\u9678\u4E0A\u90E8\u3000\u571F\u5C4B\u539F\u306F\u306D\u308B"
     Rare: C
@@ -99,4 +99,4 @@ MonoBehaviour:
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
     Illustrator: "\u30CB\u30EA\u30C4"
-    TextureResource: AVST1/B1-016
+    TextureResource: AVST1/B1-016.16
