@@ -47,6 +47,7 @@ public class GenerateDataClass : MonoBehaviour
 		{
 			if(file.Extension == ".xlsx")
 			{
+				DataSet datasource = ExcelReader.XLSX(file.Name);
 				excelfileInfolist.Add(file);
 				string entityfileName = file.Name.Replace(file.Extension, "") + "DataEntity.cs";
 				string entityfilePath = Application.dataPath + Resconfig.RES_SCRIPT_CONFIG + entityfileName;
@@ -56,6 +57,12 @@ public class GenerateDataClass : MonoBehaviour
 				string fileName = file.Name.Replace(file.Extension, "") + ".cs";
 				string filePath = Application.dataPath + Resconfig.RES_SCRIPT_CONFIG + fileName;
 				GenerateClassFile(filePath);
+				FillDataClass(filePath, datasource ,file.Name.Replace(file.Extension, ""));
+
+				string renderfileName = file.Name.Replace(file.Extension, "") + "DataRender.cs";
+				string renderfilePath = Application.dataPath +Resconfig.RES_EDITOR_RENDER + renderfileName;
+				GenerateClassFile(renderfilePath);
+				FillRenderClass(renderfilePath, datasource, file.Name.Replace(file.Extension, ""));
 			}
 		}
 		AssetDatabase.Refresh();
@@ -69,20 +76,88 @@ public class GenerateDataClass : MonoBehaviour
 			filestream.Close();
 		}
 	}
-	
-	private static void FillClassFile(string path, DataSet datasource)
+
+	private static void FillRenderClass(string path, DataSet datasource, string className)
 	{
 		if(File.Exists(path))
 		{
 			FileStream filestream = File.Open(path, FileMode.Open);
-			StreamWriter stremaWrite = new StreamWriter(filestream);
-			string DataClassTpl = getDataClassTpl(datasource);
-			stremaWrite.Flush();
-			stremaWrite.Write(DataClassTpl);
-			stremaWrite.Close();
+			StreamWriter streamWriter = new StreamWriter(filestream);
+			string RenderClassTpl = getRenderClassTpl(datasource, className);
+			streamWriter.Flush();
+			streamWriter.Write(RenderClassTpl);
+			streamWriter.Close();
 		}
 	}
-	
+
+	private static string getRenderClassTpl(DataSet datasource, string className)
+	{
+		string renderClassTpl = 
+				"using System.IO;\n" +
+				"using System.Collections.Generic;\n" +
+				"using Config;\n" +
+				"class " + className + "DataRender\n" +
+				"{\n" +
+				"\tstatic public " + className + "DataEntity Render()\n" +
+				"\t{\n" +
+				"\t\t" + className + "DataEntity entity = AssetUtility.CreateInstance<" + className + "DataEntity> ();\n" +
+				"\t\tList<" + className + "> data = new List<" + className + ">();\n" +
+				"\t\tentity.data = data;\n" +
+				"\t\treturn entity;\n" +
+				"\t}\n" +
+				"}"; 
+		return renderClassTpl;
+	}
+
+	private static void FillDataClass(string path, DataSet datasource, string className)
+	{
+		if(File.Exists(path))
+		{
+			FileStream filestream = File.Open(path, FileMode.Open);
+			StreamWriter streamWriter = new StreamWriter(filestream);
+			string DataClassTpl = getDataClassTpl(datasource, className);
+			streamWriter.Flush();
+			streamWriter.Write(DataClassTpl);
+			streamWriter.Close();
+		}
+	}
+
+	private static string getDataClassTpl(DataSet datasource, string className)
+	{
+		string dataClassTpl = 
+				"using UnityEngine;\n" +
+				"using System.IO;\n" +
+				"using System.Collections.Generic;\n" +
+				"namespace Config\n" +
+				"{\n" +
+				"\t[System.Serializable]\n" +
+				"\tpublic class " + className + "\n" +
+				"\t{\n" + getDataClassProperty(datasource) +
+				"\t}\n" +
+				"}";
+		return dataClassTpl;
+	}
+
+	private static string getDataClassProperty(DataSet dataSource)
+	{
+		int columns = dataSource.Tables[0].Columns.Count;
+		string classPorperty = "";
+		for(int i = 0; i < columns; i++)
+		{
+			var columndata= dataSource.Tables[0].Rows[1][i];
+			string datatype = columndata.GetType().ToString();
+			switch(datatype)
+			{
+			case "System.String":
+				classPorperty += "\t\tpublic string " + dataSource.Tables[0].Rows[0][i].ToString() + ";\n";
+				break;
+			case "System.Double":
+				classPorperty += "\t\tpublic int " + dataSource.Tables[0].Rows[0][i].ToString() + ";\n";
+				break;
+			}
+		}
+		return classPorperty;
+	}
 
 	private static void FillEntityClass(string path, string entityName)
 	{
@@ -111,6 +186,19 @@ public class GenerateDataClass : MonoBehaviour
 				"  }\n" +
 				"}";
 		return entityClassTpl;
+	}
+
+	private static void FillClassFile(string path, DataSet datasource)
+	{
+		if(File.Exists(path))
+		{
+			FileStream filestream = File.Open(path, FileMode.Open);
+			StreamWriter stremaWrite = new StreamWriter(filestream);
+			string DataClassTpl = getDataClassTpl(datasource);
+			stremaWrite.Flush();
+			stremaWrite.Write(DataClassTpl);
+			stremaWrite.Close();
+		}
 	}
 
 	private static string getDataClassTpl(DataSet datasource)
