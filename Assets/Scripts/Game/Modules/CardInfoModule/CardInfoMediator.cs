@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using JZWLEngine.Loader;
+using Config;
 
 public class CardInfoMediator : Mediator
 {
@@ -35,6 +36,7 @@ public class CardInfoMediator : Mediator
     {
         return new List<String>()
         {
+			CardInfoNotes.CARDINFO_SHOW_INFO
         };
     }
 
@@ -42,10 +44,21 @@ public class CardInfoMediator : Mediator
     {
         switch (notification.Name)
         {
+		case CardInfoNotes.CARDINFO_SHOW_INFO:
+			OnShowInfo((CardInfo)notification.Body);
+			break;
             default:
                 break;
         }
     }
+
+	void OnShowInfo (CardInfo cardInfo)
+	{
+		if(_UI != null)
+		{
+			_UI.ShowCard(cardInfo);
+		}
+	}
 
     public override void OnRegister()
     {

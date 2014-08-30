@@ -1,2 +1,10 @@
 //Comment: Below is format definition of OnScreenText(Short for OT), #1 and #2 means text can replace, 
 //Queue from 1
+
+CARD_COLOR_1=青
+CARD_COLOR_2=黒
+CARD_COLOR_3=赤
+CARD_COLOR_4=白
+
+CARD_NO_AND_NAME=#1 	   #2
+CARD_OTHER_INFO=#1 	          #2 	        #3 	      #4 	         #5

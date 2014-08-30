@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JZWLEngine.Managers;
 using Config;
+using System.Linq;
 
 public class CardInfoManager : ManagerTemplate<CardInfoManager> 
 {
@@ -20,6 +21,16 @@ public class CardInfoManager : ManagerTemplate<CardInfoManager>
 	public List<CardInfo> GetAllCardInfo()
 	{
 		return _cardinfoEntity.data;
+	}
+
+	public CardInfo GetCardInfoByName(string name)
+	{
+		return _cardinfoEntity.data.Find(e => e.CardName.Contains(name));
+	}
+
+	public List<CardInfo> GetCardListByColor(string color)
+	{
+		return _cardinfoEntity.data.FindAll(e => e.Color == color);
 	}
 }
 
