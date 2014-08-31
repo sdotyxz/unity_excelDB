@@ -23,5 +23,6 @@ namespace Config
 		public int Strike;
 		public string Illustrator;
 		public string TextureResource;
+		public string Serials;
 	}
 }

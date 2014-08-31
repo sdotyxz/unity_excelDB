@@ -1012,6 +1012,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400008}
   - {fileID: 400000}
   - {fileID: 400016}
   - {fileID: 400112}
@@ -1023,7 +1024,6 @@ Transform:
   - {fileID: 400022}
   - {fileID: 400004}
   - {fileID: 400012}
-  - {fileID: 400008}
   - {fileID: 400006}
   - {fileID: 400078}
   - {fileID: 400082}
@@ -2287,7 +2287,7 @@ MonoBehaviour:
     mParameters: []
     oneShot: 0
   - mTarget: {fileID: 11400012}
-    mMethodName: SearchCardWithColor
+    mMethodName: SearchCardWithCandL
     mParameters: []
     oneShot: 0
 --- !u!114 &11400022
@@ -4114,13 +4114,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 276
+  mWidth: 268
   mHeight: 18
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 15.333333
+  aspectRatio: 14.8888893
   keepCrispWhenShrunk: 0
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -4807,7 +4807,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3014
+  startingRenderQueue: 3015
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 22, y: -72, z: 444, w: 292}

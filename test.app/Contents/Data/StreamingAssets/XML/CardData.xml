@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Database>
+  <!--CardInfo-->
+  <CardInfo ID="B1-006">
+    <CardNo>B1-006</CardNo>
+    <CardName>学級委員　琴吹文</CardName>
+    <Rare>C</Rare>
+    <Type>PG</Type>
+    <Level>2</Level>
+    <Color>青</Color>
+    <Linkframe>null</Linkframe>
+    <Buster>0</Buster>
+    <EffectText>null</EffectText>
+    <DescribeText>学級委員である文がいるだけで、何故かクラスがまとまるのだ。</DescribeText>
+    <Power>5000</Power>
+    <GuardPoint>4000</GuardPoint>
+    <Feature1>人間</Feature1>
+    <Feature2>超能力</Feature2>
+    <Strike>2</Strike>
+    <Illustrator>七</Illustrator>
+    <TextureResource>AVST1/B1-006</TextureResource>
+  </CardInfo>
+  <CardInfo ID="B1-007">
+    <CardNo>B1-007</CardNo>
+    <CardName>ゲーマー少女　琴吹文</CardName>
+    <Rare>C</Rare>
+    <Type>PG</Type>
+    <Level>3</Level>
+    <Color>青</Color>
+    <Linkframe>null</Linkframe>
+    <Buster>0</Buster>
+    <EffectText>{[自動型能力,リンク‐リンクステップ開始時［リンク6‐①ΣΩ］ そのターン中、このカードのパワーを＋5000。]}</EffectText>
+    <DescribeText>文の目には何でも見えている。敵の動きも……弱点でさえも。</DescribeText>
+    <Power>8000</Power>
+    <GuardPoint>4000</GuardPoint>
+    <Feature1>人間</Feature1>
+    <Feature2>超能力</Feature2>
+    <Strike>1</Strike>
+    <Illustrator>七</Illustrator>
+    <TextureResource>AVST1/B1-007</TextureResource>
+  </CardInfo>
+  <CardInfo ID="B1-008">
+    <CardNo>B1-008</CardNo>
+    <CardName>全国ランカー　琴吹文</CardName>
+    <Rare>U</Rare>
+    <Type>PG</Type>
+    <Level>4</Level>
+    <Color>青</Color>
+    <Linkframe>null</Linkframe>
+    <Buster>0</Buster>
+    <EffectText>{[自動型能力,リンク‐リンクステップ開始時［リンク7‐①ΣΩ］ そのターン中、このカードのパワーを＋4000。]}</EffectText>
+    <DescribeText>「確かに私の目はよく見えるけど、見えるのと動けるのは違うよ」</DescribeText>
+    <Power>10000</Power>
+    <GuardPoint>4000</GuardPoint>
+    <Feature1>人間</Feature1>
+    <Feature2>超能力</Feature2>
+    <Strike>1</Strike>
+    <Illustrator>七</Illustrator>
+    <TextureResource>AVST1/B1-008</TextureResource>
+  </CardInfo>
+  <CardInfo ID="B1-009">
+    <CardNo>B1-009</CardNo>
+    <CardName>後輩　佐久良舞衣菜</CardName>
+    <Rare>U</Rare>
+    <Type>PG</Type>
+    <Level>1</Level>
+    <Color>青</Color>
+    <Linkframe>SIGUMA*1</Linkframe>
+    <Buster>0</Buster>
+    <EffectText>{[起動型能力,(FALL)あなたの山札の上を見て、山札の上か捨札に置く。]}</EffectText>
+    <DescribeText>「先輩っ！」見つめる舞衣菜の瞳には、夢と希望が輝いている。</DescribeText>
+    <Power>6000</Power>
+    <GuardPoint>4000</GuardPoint>
+    <Feature1>人間</Feature1>
+    <Feature2>超能力</Feature2>
+    <Strike>0</Strike>
+    <Illustrator>一葉モカ</Illustrator>
+    <TextureResource>AVST1/B1-009</TextureResource>
+  </CardInfo>
+  <CardInfo ID="B1-016">
+    <CardNo>B1-016</CardNo>
+    <CardName>陸上部　土屋原はねる</CardName>
+    <Rare>C</Rare>
+    <Type>PG</Type>
+    <Level>2</Level>
+    <Color>青</Color>
+    <Linkframe>null</Linkframe>
+    <Buster>0</Buster>
+    <EffectText>{[自動型能力,リンク‐リンクステップ開始時［リンク5‐②Σ］ そのターン中、このカードのパワーを＋6000。]}</EffectText>
+    <DescribeText>「アスリートだからね！」はねるはそう言うと、人懐っこく笑う。</DescribeText>
+    <Power>6000</Power>
+    <GuardPoint>4000</GuardPoint>
+    <Feature1>人間</Feature1>
+    <Feature2>超能力</Feature2>
+    <Strike>1</Strike>
+    <Illustrator>ニリツ</Illustrator>
+    <TextureResource>AVST1/B1-016</TextureResource>
+  </CardInfo>
+</Database>

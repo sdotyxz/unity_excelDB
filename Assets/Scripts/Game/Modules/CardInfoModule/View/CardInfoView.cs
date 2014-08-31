@@ -21,6 +21,18 @@ public class CardInfoView : MonoBehaviour
 	public GameObject template;
 	private List<CardInfoUnit> infounitlist = new List<CardInfoUnit>();
 
+	private GameDataManager gameDataManager;
+
+	void Start()
+	{
+		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
+		List<string> cardnamelist = gameDataManager.gameData.cardname;
+		foreach(string name in cardnamelist)
+		{
+			Debug.Log ("------ " + name + " ------");
+		}
+	}
+
 	public void ShowCardInfo()
 	{
 		List<CardInfo> cardinfolist = CardInfoManager.instance.GetAllCardInfo();
@@ -41,6 +53,8 @@ public class CardInfoView : MonoBehaviour
 		Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
 		texCardImage.mainTexture = tex;
 		txtCardDes.text = info.DescribeText;
+		gameDataManager.gameData.cardname.Add(info.CardName);
+		gameDataManager.Save();
 	}
 
 	public void SearchCard()
@@ -68,5 +82,45 @@ public class CardInfoView : MonoBehaviour
 			}
 			grid.Reposition();
 		}
+	}
+
+	public void SearchCardWithCandL()
+	{
+		string color = popColor.value;
+		int level = -1;
+		if(popLevel.value != "*")
+		{
+			level = int.Parse(popLevel.value);
+		}
+		string type = popKind.value;
+		string frame = popFrame.value;
+		string serials = popSerials.value;
+		string cardname = inputName.value;
+
+
+		Dictionary<string, object> querydic = new Dictionary<string, object>();
+		querydic.Add("Color", color);
+		querydic.Add("Level", level);
+		querydic.Add("Type", type);
+		querydic.Add("Linkframe", frame);
+		querydic.Add("Serials", serials);
+
+		List<CardInfo> infolist = CardInfoManager.instance.GetCardListByMultipleSearch(querydic);
+
+		List<CardInfo> finallist = infolist.FindAll(e => e.CardName.Contains(cardname));
+		if(finallist != null && template != null)
+		{
+			foreach(CardInfo info in finallist)
+			{
+				Debug.Log ("------ ------" + info.CardName);
+				GameObject go =  NGUITools.AddChild(grid.gameObject,  template);
+				CardInfoUnit ciu = go.GetComponent<CardInfoUnit>();
+				infounitlist.Add(ciu);
+				ciu.UpdateCardInfo(info);
+			}
+			grid.Reposition();
+		}
+
+
 	}
 }
