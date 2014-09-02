@@ -16,13 +16,24 @@ public class CardInfoView : MonoBehaviour
 	public UIPopupList popFrame;
 	public UIPopupList popSerials;
 	public UIInput inputName;
+	public UIInput inputNo;
+	
+	public UIButton btnSaveGroup;
+	public UIInput inputGroup;
+	private List<CardInfo> tempinfolist = new List<CardInfo>();
 
+	public UIGrid groupgrid;
 	public UIGrid cardgrid;
 	public UIGrid grid;
 	public GameObject template;
 	private List<CardInfoUnit> infounitlist = new List<CardInfoUnit>();
 
+	private List<MyCardUnit> mycardlist = new List<MyCardUnit>();
+	private List<MyCardListUnit> mygrouplist = new List<MyCardListUnit>();
+
 	public GameObject iconTemplate;
+
+	public GameObject groupTemplate;
 
 	private GameDataManager gameDataManager;
 
@@ -30,12 +41,56 @@ public class CardInfoView : MonoBehaviour
 
 	void Start()
 	{
+		Pool.GetComponent<UIEventListener>(btnSaveGroup).onClick = OnClickbtnSaveGroup;
 		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
-		List<string> cardnamelist = gameDataManager.gameData.cardname;
-		foreach(string name in cardnamelist)
+//		List<CardInfo> cardinfolist = gameDataManager.gameData.MyCardList;
+//		foreach(CardInfo info in cardinfolist)
+//		{
+//			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
+//			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
+//			mycu.UpdateMyCardUnit(info);
+//		}
+		UpdateGroupList();
+	}
+
+	private void OnClickbtnSaveGroup(GameObject go)
+	{
+		if(inputGroup.value != "")
 		{
-			Debug.Log ("------ " + name + " ------");
+			MyCardGroup cardgroup = new MyCardGroup();
+			cardgroup.groupname = inputGroup.value;
+			cardgroup.cardlist = tempinfolist;
+			int index = gameDataManager.gameData.CardGroupList.FindIndex(e => e.groupname == cardgroup.groupname);
+			if(index != -1)
+			{
+				gameDataManager.gameData.CardGroupList.RemoveAt(index);
+			}
+			gameDataManager.gameData.CardGroupList.Add(cardgroup);
+			gameDataManager.Save();
+			UpdateGroupList();
 		}
+	}
+
+	private void UpdateGroupList()
+	{
+		foreach(MyCardListUnit g in mygrouplist)
+		{
+			GameObject.Destroy(g.gameObject);
+		}
+		mygrouplist = new List<MyCardListUnit>();
+
+		List<MyCardGroup> grouplist = gameDataManager.gameData.CardGroupList;
+		foreach(MyCardGroup group in grouplist)
+		{
+			if(groupTemplate != null)
+			{
+				GameObject go = NGUITools.AddChild(groupgrid.gameObject, groupTemplate);
+				MyCardListUnit unit = go.GetComponent<MyCardListUnit>();
+				unit.UpdateUnit(group);
+				mygrouplist.Add(unit);
+			}
+		}
+		groupgrid.Reposition();
 	}
 
 	public void ShowCardInfo()
@@ -61,6 +116,29 @@ public class CardInfoView : MonoBehaviour
 		currentCardInfo = info;
 	}
 
+	public void ShowGroup(MyCardGroup group)
+	{
+		inputGroup.value = group.groupname;
+		tempinfolist = group.cardlist;
+		foreach(MyCardUnit card in mycardlist)
+		{
+			GameObject.Destroy(card.gameObject);
+		}
+		mycardlist = new List<MyCardUnit>();
+		foreach(CardInfo info in tempinfolist)
+		{
+			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
+			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
+			mycu.UpdateMyCardUnit(info);
+			mycardlist.Add(mycu);
+		}
+		Invoke("Repos", 0.1f);
+	}
+
+	void Repos()
+	{
+		cardgrid.Reposition();
+	}
 
 
 	public void SearchCard()
@@ -102,7 +180,7 @@ public class CardInfoView : MonoBehaviour
 		string frame = popFrame.value;
 		string serials = popSerials.value;
 		string cardname = inputName.value;
-
+		string cardNo = inputNo.value;
 
 		Dictionary<string, object> querydic = new Dictionary<string, object>();
 		querydic.Add("Color", color);
@@ -114,6 +192,7 @@ public class CardInfoView : MonoBehaviour
 		List<CardInfo> infolist = CardInfoManager.instance.GetCardListByMultipleSearch(querydic);
 
 		List<CardInfo> finallist = infolist.FindAll(e => e.CardName.Contains(cardname));
+		finallist = finallist.FindAll(e => e.CardNo.Contains(cardNo));
 		if(finallist != null && template != null)
 		{
 			foreach(CardInfo info in finallist)
@@ -135,6 +214,7 @@ public class CardInfoView : MonoBehaviour
 			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
 			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
 			mycu.UpdateMyCardUnit(currentCardInfo);
+			tempinfolist.Add(currentCardInfo);
 		}
 		cardgrid.Reposition();
 	}

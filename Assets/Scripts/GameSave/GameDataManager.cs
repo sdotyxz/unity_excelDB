@@ -7,6 +7,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Security.Cryptography;
+using Config;
 
 // Class which used to save game data
 public class GameData
@@ -16,12 +17,17 @@ public class GameData
 
 	public string PlayerName;
 	public float MusicVolume;
-	public List<string> cardname = new List<string>();
+
+	public List<CardInfo> MyCardList;
+
+	public List<MyCardGroup> CardGroupList;
 
 	public GameData()
 	{
 		PlayerName = "Player";
 		MusicVolume = 0.6f;
+		MyCardList = new List<CardInfo>();
+		CardGroupList = new List<MyCardGroup>();
 	}
 }
 
