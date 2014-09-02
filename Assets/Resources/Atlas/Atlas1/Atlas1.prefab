@@ -41,8 +41,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 802cc4be588b0ed4bae549a7b85ad2c3, type: 2}
   mSprites:
   - name: bg_btm
-    x: 0
-    y: 75
+    x: 89
+    y: 10
     width: 40
     height: 19
     borderLeft: 20
@@ -54,8 +54,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: bg_center
-    x: 61
-    y: 108
+    x: 89
+    y: 30
     width: 40
     height: 20
     borderLeft: 20
@@ -67,8 +67,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color1
-    x: 28
-    y: 6
+    x: 147
+    y: 34
     width: 10
     height: 16
     borderLeft: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color2
-    x: 41
-    y: 65
+    x: 130
+    y: 13
     width: 10
     height: 16
     borderLeft: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color3
-    x: 41
-    y: 48
+    x: 141
+    y: 13
     width: 10
     height: 16
     borderLeft: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color4
-    x: 41
-    y: 31
+    x: 195
+    y: 8
     width: 10
     height: 16
     borderLeft: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: card-add_select_bg
     x: 0
-    y: 108
+    y: 5
     width: 60
     height: 20
     borderLeft: 0
@@ -132,8 +132,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card-add_select_ptn
-    x: 85
-    y: 84
+    x: 61
+    y: 2
     width: 10
     height: 10
     borderLeft: 0
@@ -144,9 +144,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: publish-deck_ec-cursor
+    x: 0
+    y: 26
+    width: 88
+    height: 37
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 2
+    paddingTop: 0
+    paddingBottom: 1
+  - name: pv_bg
+    x: 0
+    y: 64
+    width: 332
+    height: 192
+    borderLeft: 150
+    borderRight: 150
+    borderTop: 90
+    borderBottom: 90
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 4
+    paddingBottom: 4
   - name: thic_color
-    x: 102
-    y: 116
+    x: 130
+    y: 38
     width: 16
     height: 12
     borderLeft: 0
@@ -158,8 +184,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_guard
-    x: 0
-    y: 36
+    x: 210
+    y: 51
     width: 34
     height: 12
     borderLeft: 0
@@ -171,8 +197,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_level
-    x: 0
-    y: 23
+    x: 210
+    y: 38
     width: 31
     height: 12
     borderLeft: 0
@@ -184,8 +210,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_link
-    x: 0
-    y: 62
+    x: 159
+    y: 25
     width: 35
     height: 12
     borderLeft: 0
@@ -197,8 +223,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_name
-    x: 41
-    y: 82
+    x: 159
+    y: 38
     width: 43
     height: 12
     borderLeft: 0
@@ -210,8 +236,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_number
-    x: 70
-    y: 95
+    x: 159
+    y: 51
     width: 50
     height: 12
     borderLeft: 0
@@ -223,8 +249,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_power
-    x: 0
-    y: 49
+    x: 159
+    y: 12
     width: 35
     height: 12
     borderLeft: 0
@@ -236,8 +262,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_sort
-    x: 0
-    y: 95
+    x: 89
+    y: 51
     width: 69
     height: 12
     borderLeft: 0
@@ -249,8 +275,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: thic_type
-    x: 0
-    y: 10
+    x: 61
+    y: 13
     width: 27
     height: 12
     borderLeft: 0

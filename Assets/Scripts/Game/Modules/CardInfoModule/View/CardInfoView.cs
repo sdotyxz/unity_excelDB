@@ -17,11 +17,16 @@ public class CardInfoView : MonoBehaviour
 	public UIPopupList popSerials;
 	public UIInput inputName;
 
+	public UIGrid cardgrid;
 	public UIGrid grid;
 	public GameObject template;
 	private List<CardInfoUnit> infounitlist = new List<CardInfoUnit>();
 
+	public GameObject iconTemplate;
+
 	private GameDataManager gameDataManager;
+
+	private CardInfo currentCardInfo;
 
 	void Start()
 	{
@@ -53,9 +58,10 @@ public class CardInfoView : MonoBehaviour
 		Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
 		texCardImage.mainTexture = tex;
 		txtCardDes.text = info.DescribeText;
-		gameDataManager.gameData.cardname.Add(info.CardName);
-		gameDataManager.Save();
+		currentCardInfo = info;
 	}
+
+
 
 	public void SearchCard()
 	{
@@ -120,7 +126,16 @@ public class CardInfoView : MonoBehaviour
 			}
 			grid.Reposition();
 		}
+	}
 
-
+	public void AddToMyCard()
+	{
+		if(currentCardInfo != null)
+		{
+			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
+			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
+			mycu.UpdateMyCardUnit(currentCardInfo);
+		}
+		cardgrid.Reposition();
 	}
 }
