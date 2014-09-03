@@ -5,6 +5,7 @@ using Config;
 
 public class CardInfoView : MonoBehaviour
 {
+	public UILabel txtCardEffect;
 	public UILabel txtCardName;
 	public UILabel txtCardDes;
 	public UITexture texCardImage;
@@ -19,6 +20,7 @@ public class CardInfoView : MonoBehaviour
 	public UIInput inputNo;
 	
 	public UIButton btnSaveGroup;
+	public UIButton btnDeleteGroup;
 	public UIInput inputGroup;
 	private List<CardInfo> tempinfolist = new List<CardInfo>();
 
@@ -41,6 +43,7 @@ public class CardInfoView : MonoBehaviour
 
 	void Start()
 	{
+		Pool.GetComponent<UIEventListener>(btnDeleteGroup).onClick = OnClickbtnDeleteGroup;
 		Pool.GetComponent<UIEventListener>(btnSaveGroup).onClick = OnClickbtnSaveGroup;
 		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
 //		List<CardInfo> cardinfolist = gameDataManager.gameData.MyCardList;
@@ -71,6 +74,21 @@ public class CardInfoView : MonoBehaviour
 		}
 	}
 
+	void OnClickbtnDeleteGroup (GameObject go)
+	{
+		if(inputGroup.value != "")
+		{
+			string groupname = inputGroup.value;
+			int index = gameDataManager.gameData.CardGroupList.FindIndex(e => e.groupname == groupname);
+			if(index != -1)
+			{
+				gameDataManager.gameData.CardGroupList.RemoveAt(index);
+			}
+			gameDataManager.Save();
+			UpdateGroupList();
+		}
+	}
+
 	private void UpdateGroupList()
 	{
 		foreach(MyCardListUnit g in mygrouplist)
@@ -90,8 +108,14 @@ public class CardInfoView : MonoBehaviour
 				mygrouplist.Add(unit);
 			}
 		}
+		Invoke("DelayRepos", 0.1f);
+	}
+
+	private void DelayRepos()
+	{
 		groupgrid.Reposition();
 	}
+
 
 	public void ShowCardInfo()
 	{
@@ -113,6 +137,7 @@ public class CardInfoView : MonoBehaviour
 		Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
 		texCardImage.mainTexture = tex;
 		txtCardDes.text = info.DescribeText;
+		txtCardEffect.text = info.EffectText;
 		currentCardInfo = info;
 	}
 
@@ -120,12 +145,17 @@ public class CardInfoView : MonoBehaviour
 	{
 		inputGroup.value = group.groupname;
 		tempinfolist = group.cardlist;
+		UpdateMyCardList(tempinfolist);
+	}
+
+	private void UpdateMyCardList(List<CardInfo> infolist)
+	{
 		foreach(MyCardUnit card in mycardlist)
 		{
 			GameObject.Destroy(card.gameObject);
 		}
 		mycardlist = new List<MyCardUnit>();
-		foreach(CardInfo info in tempinfolist)
+		foreach(CardInfo info in infolist)
 		{
 			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
 			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
@@ -217,5 +247,15 @@ public class CardInfoView : MonoBehaviour
 			tempinfolist.Add(currentCardInfo);
 		}
 		cardgrid.Reposition();
+	}
+
+	public void RemoveMyCard(CardInfo info)
+	{
+		int index = tempinfolist.FindIndex(e => e.CardNo == info.CardNo);
+		if(index != -1)
+		{
+			tempinfolist.RemoveAt(index);
+		}
+		UpdateMyCardList(tempinfolist);
 	}
 }

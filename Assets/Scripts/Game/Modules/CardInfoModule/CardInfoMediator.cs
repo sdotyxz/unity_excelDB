@@ -37,7 +37,8 @@ public class CardInfoMediator : Mediator
         return new List<String>()
         {
 			CardInfoNotes.CARDINFO_SHOW_INFO,
-			CardInfoNotes.CARDINFO_SHOW_GROUP
+			CardInfoNotes.CARDINFO_SHOW_GROUP,
+			CardInfoNotes.CARDINFO_REMOVE_CARD
         };
     }
 
@@ -50,6 +51,9 @@ public class CardInfoMediator : Mediator
 			break;
 		case CardInfoNotes.CARDINFO_SHOW_GROUP:
 			OnShowGroup((MyCardGroup)notification.Body);
+			break;
+		case CardInfoNotes.CARDINFO_REMOVE_CARD:
+			OnRemoveInfo((CardInfo)notification.Body);
 			break;
             default:
                 break;
@@ -69,6 +73,14 @@ public class CardInfoMediator : Mediator
 		if(_UI != null)
 		{
 			_UI.ShowCard(cardInfo);
+		}
+	}
+
+	void OnRemoveInfo (CardInfo cardInfo)
+	{
+		if(_UI != null)
+		{
+			_UI.RemoveMyCard(cardInfo);
 		}
 	}
 
