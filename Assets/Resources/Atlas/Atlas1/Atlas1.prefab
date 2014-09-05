@@ -67,7 +67,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color1
-    x: 147
+    x: 145
     y: 34
     width: 10
     height: 16
@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color2
-    x: 130
-    y: 13
+    x: 210
+    y: 21
     width: 10
     height: 16
     borderLeft: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color3
-    x: 141
-    y: 13
+    x: 210
+    y: 4
     width: 10
     height: 16
     borderLeft: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color4
-    x: 195
-    y: 8
+    x: 221
+    y: 21
     width: 10
     height: 16
     borderLeft: 0
@@ -144,6 +144,45 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: EF_1
+    x: 130
+    y: 36
+    width: 14
+    height: 14
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: EF_2
+    x: 130
+    y: 15
+    width: 14
+    height: 14
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: EF_3
+    x: 195
+    y: 10
+    width: 14
+    height: 14
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: publish-deck_ec-cursor
     x: 0
     y: 26
@@ -172,7 +211,7 @@ MonoBehaviour:
     paddingBottom: 4
   - name: thic_color
     x: 130
-    y: 38
+    y: 2
     width: 16
     height: 12
     borderLeft: 0

@@ -5,6 +5,7 @@ using Config;
 
 public class CardInfoView : MonoBehaviour
 {
+	public CardDesc carddesc;
 	public UILabel txtCardEffect;
 	public UILabel txtCardName;
 	public UILabel txtCardDes;
@@ -133,11 +134,13 @@ public class CardInfoView : MonoBehaviour
 
 	public void ShowCard(CardInfo info)
 	{
-		txtCardName.text = info.CardName;
-		Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
-		texCardImage.mainTexture = tex;
-		txtCardDes.text = info.DescribeText;
-		txtCardEffect.text = info.EffectText;
+		carddesc.UpdateCardDes(info);
+//
+//		txtCardName.text = info.CardName;
+//		Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
+//		texCardImage.mainTexture = tex;
+//		txtCardDes.text = info.DescribeText;
+//		txtCardEffect.text = info.EffectText;
 		currentCardInfo = info;
 	}
 

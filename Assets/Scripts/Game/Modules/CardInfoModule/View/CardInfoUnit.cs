@@ -7,8 +7,13 @@ using PureMVC.Patterns;
 public class CardInfoUnit : MonoBehaviour 
 {
 	public UISprite spColor;
-	public UILabel txtNoName;
-	public UILabel txtOtherInfo;
+	public UILabel txtNo;
+	public UILabel txtName;
+	public UILabel txtType;
+	public UILabel txtLevel;
+	public UILabel txtFrame;
+	public UILabel txtPower;
+	public UILabel txtGuard;
 
 	private CardInfo mCardInfo;
 
@@ -31,11 +36,15 @@ public class CardInfoUnit : MonoBehaviour
 		{
 			mCardInfo = info;
 			spColor.spriteName = CalCardColorString(mCardInfo);
-			txtNoName.text = OTManager.instance.GetOT("CARD_NO_AND_NAME", mCardInfo.CardNo, mCardInfo.CardName);
+			txtNo.text = mCardInfo.CardNo;
+			txtName.text = mCardInfo.CardName;
 			string frame = mCardInfo.Linkframe;
 			if(frame == "null") frame = "  ";
-			txtOtherInfo.text = OTManager.instance.GetOT("CARD_OTHER_INFO", mCardInfo.Type, mCardInfo.Level.ToString(), 
-			                                             frame, mCardInfo.Power.ToString(), mCardInfo.GuardPoint.ToString());
+			txtType.text = mCardInfo.Type;
+			txtLevel.text = mCardInfo.Level.ToString();
+			txtFrame.text = frame;
+			txtPower.text = mCardInfo.Power.ToString();
+			txtGuard.text = mCardInfo.GuardPoint.ToString();
 		}
 	}
 

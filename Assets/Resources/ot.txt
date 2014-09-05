@@ -8,3 +8,5 @@ CARD_COLOR_4=白
 
 CARD_NO_AND_NAME=#1 	   #2
 CARD_OTHER_INFO=#1 	          #2 	        #3 	      #4 	         #5
+CARD_COLOR_PROPERTY=色:#1
+CARD_TYPE=種類:#1
