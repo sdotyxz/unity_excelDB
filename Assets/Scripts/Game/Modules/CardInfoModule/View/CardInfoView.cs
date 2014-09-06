@@ -6,11 +6,7 @@ using Config;
 public class CardInfoView : MonoBehaviour
 {
 	public CardDesc carddesc;
-	public UILabel txtCardEffect;
-	public UILabel txtCardName;
-	public UILabel txtCardDes;
-	public UITexture texCardImage;
-	private int curIndex = 0;
+	public CardStorage cardStorage;
 
 	public UIPopupList popColor;
 	public UIPopupList popLevel;
@@ -47,31 +43,25 @@ public class CardInfoView : MonoBehaviour
 		Pool.GetComponent<UIEventListener>(btnDeleteGroup).onClick = OnClickbtnDeleteGroup;
 		Pool.GetComponent<UIEventListener>(btnSaveGroup).onClick = OnClickbtnSaveGroup;
 		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
-//		List<CardInfo> cardinfolist = gameDataManager.gameData.MyCardList;
-//		foreach(CardInfo info in cardinfolist)
-//		{
-//			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
-//			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
-//			mycu.UpdateMyCardUnit(info);
-//		}
-		UpdateGroupList();
+		//UpdateGroupList();
+		cardStorage.Build(54);
 	}
 
 	private void OnClickbtnSaveGroup(GameObject go)
 	{
 		if(inputGroup.value != "")
 		{
-			MyCardGroup cardgroup = new MyCardGroup();
-			cardgroup.groupname = inputGroup.value;
-			cardgroup.cardlist = tempinfolist;
-			int index = gameDataManager.gameData.CardGroupList.FindIndex(e => e.groupname == cardgroup.groupname);
-			if(index != -1)
-			{
-				gameDataManager.gameData.CardGroupList.RemoveAt(index);
-			}
-			gameDataManager.gameData.CardGroupList.Add(cardgroup);
-			gameDataManager.Save();
-			UpdateGroupList();
+//			MyCardGroup cardgroup = new MyCardGroup();
+//			cardgroup.groupname = inputGroup.value;
+//			cardgroup.cardlist = tempinfolist;
+//			int index = gameDataManager.gameData.CardGroupList.FindIndex(e => e.groupname == cardgroup.groupname);
+//			if(index != -1)
+//			{
+//				gameDataManager.gameData.CardGroupList.RemoveAt(index);
+//			}
+//			gameDataManager.gameData.CardGroupList.Add(cardgroup);
+//			gameDataManager.Save();
+//			UpdateGroupList();
 		}
 	}
 
@@ -117,38 +107,17 @@ public class CardInfoView : MonoBehaviour
 		groupgrid.Reposition();
 	}
 
-
-	public void ShowCardInfo()
-	{
-		List<CardInfo> cardinfolist = CardInfoManager.instance.GetAllCardInfo();
-		ShowCard(cardinfolist[curIndex]);
-	}
-
-	public void SelectNextCard()
-	{
-		List<CardInfo> cardinfolist = CardInfoManager.instance.GetAllCardInfo();
-		curIndex ++;
-		if(curIndex >= cardinfolist.Count) curIndex = 0;
-		ShowCard(cardinfolist[curIndex]);
-	}
-
 	public void ShowCard(CardInfo info)
 	{
 		carddesc.UpdateCardDes(info);
-//
-//		txtCardName.text = info.CardName;
-//		Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
-//		texCardImage.mainTexture = tex;
-//		txtCardDes.text = info.DescribeText;
-//		txtCardEffect.text = info.EffectText;
 		currentCardInfo = info;
 	}
 
 	public void ShowGroup(MyCardGroup group)
 	{
-		inputGroup.value = group.groupname;
-		tempinfolist = group.cardlist;
-		UpdateMyCardList(tempinfolist);
+//		inputGroup.value = group.groupname;
+//		tempinfolist = group.cardlist;
+//		UpdateMyCardList(tempinfolist);
 	}
 
 	private void UpdateMyCardList(List<CardInfo> infolist)

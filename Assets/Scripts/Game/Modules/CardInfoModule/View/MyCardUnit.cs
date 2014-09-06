@@ -3,12 +3,30 @@ using System.Collections;
 using Config;
 using PureMVC.Patterns;
 
+public class MyCard
+{
+	public CardInfo info;
+	public int num;
+
+	public MyCard()
+	{}
+
+	public MyCard(CardInfo cardinfo , int cardnum)
+	{
+		info = cardinfo;
+		num = cardnum;
+	}
+}
+
 public class MyCardUnit : MonoBehaviour 
 {
 	public UIButton btnRemove;
-	public UISprite cardICON;
+
+	public UITexture texCardImage;
+	public UILabel txtCardNum;
 	private CardInfo myCardInfo;
 
+	private MyCard myCard;
 
 	void Start()
 	{
@@ -28,7 +46,17 @@ public class MyCardUnit : MonoBehaviour
 		if(myCardInfo != cardinfo)
 		{
 			myCardInfo = cardinfo;
-			cardICON.spriteName = myCardInfo.CardNo;
+		}
+	}
+
+	public void UpdateMyCardUnit(MyCard card)
+	{
+		if(myCard != card)
+		{
+			myCard = card;
+			Texture2D tex = Resources.Load(card.info.TextureResource) as Texture2D;
+			texCardImage.mainTexture = tex;
+			txtCardNum.text = myCard.num.ToString();
 		}
 	}
 }

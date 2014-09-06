@@ -29,7 +29,6 @@ public class CardInfoMediator : Mediator
 
            GameObject go = _scene.birthPos.gameObject;
            _UI = go.GetComponent<CardInfoView>();
-		   _UI.ShowCardInfo();
     }
 
     public override IList<string> ListNotificationInterests()

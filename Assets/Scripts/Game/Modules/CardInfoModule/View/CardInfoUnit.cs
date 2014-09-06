@@ -26,7 +26,6 @@ public class CardInfoUnit : MonoBehaviour
 
 	void OnClickUnit (GameObject go)
 	{
-		Debug.Log ("------ ------");
 		Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_SHOW_INFO, mCardInfo);
 	}
 

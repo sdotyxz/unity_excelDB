@@ -11,6 +11,7 @@ public class CardDesc : MonoBehaviour
 	public UILabel txtCardName;
 	public UILabel txtCardDes;
 	public UITable tableEffect;
+	public UILabel txtDes;
 
 	private CardInfo mCardInfo;
 
@@ -29,17 +30,25 @@ public class CardDesc : MonoBehaviour
 
 	private void ShowCardEffect(CardInfo info)
 	{
+		foreach(CardEffectUnit eu in effectlist)
+		{
+			eu.gameObject.SetActive(false);
+		}
 		if(info.EffectText != "null")
 		{
-			effectlist[0].gameObject.SetActive(true);
 			string[] effectgroup = info.EffectText.Split('&');
-			string effect1 = effectgroup[0];
-			string[] effectdes1 = effect1.Split('#');
-			string effecttext = effectdes1[1];
-			effectlist[0].spEffectDes.spriteName = "EF_" + effectdes1[0];
-			effectlist[0].txtEffectDes.text = effecttext;
-			tableEffect.Reposition();
+			for(int i = 0; i < effectgroup.Length; i ++)
+			{
+				effectlist[i].gameObject.SetActive(true);
+				string effect = effectgroup[i];
+				string[] effectdes = effect.Split('#');
+				string effecttext = effectdes[1];
+				effectlist[i].spEffectDes.spriteName = "EF_" + effectdes[0];
+				effectlist[i].txtEffectDes.text = effecttext;
+			}
 		}
+		txtDes.text = "\n" + info.DescribeText;
+		tableEffect.Reposition();
 	}
 
 	private string FormatCardDes(CardInfo info)

@@ -6,5 +6,5 @@ using Config;
 public class MyCardGroup
 {
 	public string groupname;
-	public List<CardInfo> cardlist = new List<CardInfo>();
+	public List<MyCard> mycardlist = new List<MyCard>();
 }
