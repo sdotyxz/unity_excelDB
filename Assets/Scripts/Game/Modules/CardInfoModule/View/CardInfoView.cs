@@ -7,6 +7,7 @@ public class CardInfoView : MonoBehaviour
 {
 	public CardDesc carddesc;
 	public CardStorage cardStorage;
+	public CardGroupStorage groupStorage;
 
 	public UIPopupList popColor;
 	public UIPopupList popLevel;
@@ -15,20 +16,21 @@ public class CardInfoView : MonoBehaviour
 	public UIPopupList popSerials;
 	public UIInput inputName;
 	public UIInput inputNo;
-	
+
+	public UIButton btnAddCard;
 	public UIButton btnSaveGroup;
 	public UIButton btnDeleteGroup;
 	public UIInput inputGroup;
-	private List<CardInfo> tempinfolist = new List<CardInfo>();
+	private List<MyCard> tempcardlist = new List<MyCard>();
+
 
 	public UIGrid groupgrid;
 	public UIGrid cardgrid;
 	public UIGrid grid;
 	public GameObject template;
 	private List<CardInfoUnit> infounitlist = new List<CardInfoUnit>();
-
-	private List<MyCardUnit> mycardlist = new List<MyCardUnit>();
-	private List<MyCardListUnit> mygrouplist = new List<MyCardListUnit>();
+	
+	private List<CardGroupUnit> mygrouplist = new List<CardGroupUnit>();
 
 	public GameObject iconTemplate;
 
@@ -40,29 +42,67 @@ public class CardInfoView : MonoBehaviour
 
 	void Start()
 	{
+		Pool.GetComponent<UIEventListener>(btnAddCard).onClick = OnClickbtnAddCard;
 		Pool.GetComponent<UIEventListener>(btnDeleteGroup).onClick = OnClickbtnDeleteGroup;
 		Pool.GetComponent<UIEventListener>(btnSaveGroup).onClick = OnClickbtnSaveGroup;
 		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
-		//UpdateGroupList();
+		UpdateGroupList();
 		cardStorage.Build(54);
+	}
+
+	void OnClickbtnAddCard (GameObject go)
+	{
+		if(carddesc.cardinfo != null)
+		{
+			int index = tempcardlist.FindIndex(e => e.info.CardNo == carddesc.cardinfo.CardNo);
+			if(index != -1)
+			{
+				tempcardlist[index].num++;
+			}
+			else
+			{
+				MyCard card = new MyCard(carddesc.cardinfo, 1);
+				tempcardlist.Add(card);
+			}
+		}
+		cardStorage.Fill(tempcardlist);
 	}
 
 	private void OnClickbtnSaveGroup(GameObject go)
 	{
 		if(inputGroup.value != "")
 		{
-//			MyCardGroup cardgroup = new MyCardGroup();
-//			cardgroup.groupname = inputGroup.value;
-//			cardgroup.cardlist = tempinfolist;
-//			int index = gameDataManager.gameData.CardGroupList.FindIndex(e => e.groupname == cardgroup.groupname);
-//			if(index != -1)
-//			{
-//				gameDataManager.gameData.CardGroupList.RemoveAt(index);
-//			}
-//			gameDataManager.gameData.CardGroupList.Add(cardgroup);
-//			gameDataManager.Save();
-//			UpdateGroupList();
+			CardGroup group = new CardGroup();
+			group.groupname = inputGroup.value;
+			group.cardlist = tempcardlist;
+			int index = gameDataManager.gameData.CardGroupList.FindIndex(e => e.groupname == group.groupname);
+			if(index != -1)
+			{
+				gameDataManager.gameData.CardGroupList.RemoveAt(index);
+			}
+			gameDataManager.gameData.CardGroupList.Add(group);
+			gameDataManager.Save();
+			UpdateGroupList();
 		}
+	}
+
+	void UpdateGroupList ()
+	{
+		groupStorage.Clear();
+		Pool.GetComponent<CommonStorage>(groupStorage).OnBuildFinish = OnCardGroupBuild;
+		groupStorage.Build(gameDataManager.gameData.CardGroupList.Count);
+	}
+
+	public void ShowGroupCards(CardGroup group)
+	{
+		inputGroup.value = group.groupname;
+		cardStorage.Fill(group.cardlist);
+		tempcardlist = group.cardlist;
+	}
+
+	void OnCardGroupBuild(GameObject go)
+	{
+		groupStorage.Fill(gameDataManager.gameData.CardGroupList);
 	}
 
 	void OnClickbtnDeleteGroup (GameObject go)
@@ -76,70 +116,14 @@ public class CardInfoView : MonoBehaviour
 				gameDataManager.gameData.CardGroupList.RemoveAt(index);
 			}
 			gameDataManager.Save();
-			UpdateGroupList();
 		}
-	}
-
-	private void UpdateGroupList()
-	{
-		foreach(MyCardListUnit g in mygrouplist)
-		{
-			GameObject.Destroy(g.gameObject);
-		}
-		mygrouplist = new List<MyCardListUnit>();
-
-		List<MyCardGroup> grouplist = gameDataManager.gameData.CardGroupList;
-		foreach(MyCardGroup group in grouplist)
-		{
-			if(groupTemplate != null)
-			{
-				GameObject go = NGUITools.AddChild(groupgrid.gameObject, groupTemplate);
-				MyCardListUnit unit = go.GetComponent<MyCardListUnit>();
-				unit.UpdateUnit(group);
-				mygrouplist.Add(unit);
-			}
-		}
-		Invoke("DelayRepos", 0.1f);
-	}
-
-	private void DelayRepos()
-	{
-		groupgrid.Reposition();
+		UpdateGroupList();
 	}
 
 	public void ShowCard(CardInfo info)
 	{
 		carddesc.UpdateCardDes(info);
 		currentCardInfo = info;
-	}
-
-	public void ShowGroup(MyCardGroup group)
-	{
-//		inputGroup.value = group.groupname;
-//		tempinfolist = group.cardlist;
-//		UpdateMyCardList(tempinfolist);
-	}
-
-	private void UpdateMyCardList(List<CardInfo> infolist)
-	{
-		foreach(MyCardUnit card in mycardlist)
-		{
-			GameObject.Destroy(card.gameObject);
-		}
-		mycardlist = new List<MyCardUnit>();
-		foreach(CardInfo info in infolist)
-		{
-			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
-			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
-			mycu.UpdateMyCardUnit(info);
-			mycardlist.Add(mycu);
-		}
-		Invoke("Repos", 0.1f);
-	}
-
-	void Repos()
-	{
-		cardgrid.Reposition();
 	}
 
 
@@ -209,25 +193,17 @@ public class CardInfoView : MonoBehaviour
 		}
 	}
 
-	public void AddToMyCard()
-	{
-		if(currentCardInfo != null)
-		{
-			GameObject go = NGUITools.AddChild(cardgrid.gameObject, iconTemplate);
-			MyCardUnit mycu = go.GetComponent<MyCardUnit>();
-			mycu.UpdateMyCardUnit(currentCardInfo);
-			tempinfolist.Add(currentCardInfo);
-		}
-		cardgrid.Reposition();
-	}
-
 	public void RemoveMyCard(CardInfo info)
 	{
-		int index = tempinfolist.FindIndex(e => e.CardNo == info.CardNo);
+		int index = tempcardlist.FindIndex(e => e.info.CardNo == info.CardNo);
 		if(index != -1)
 		{
-			tempinfolist.RemoveAt(index);
+			tempcardlist[index].num --;
+			if(tempcardlist[index].num == 0)
+			{
+				tempcardlist.RemoveAt(index);
+			}
 		}
-		UpdateMyCardList(tempinfolist);
+		cardStorage.Fill(tempcardlist);
 	}
 }

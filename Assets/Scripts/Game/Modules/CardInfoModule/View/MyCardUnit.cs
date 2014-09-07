@@ -35,17 +35,9 @@ public class MyCardUnit : MonoBehaviour
 
 	void OnClickbtnRemove (GameObject go)
 	{
-		if(myCardInfo != null)
+		if(myCard != null)
 		{
-			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_REMOVE_CARD, myCardInfo);
-		}
-	}
-
-	public void UpdateMyCardUnit(CardInfo cardinfo)
-	{
-		if(myCardInfo != cardinfo)
-		{
-			myCardInfo = cardinfo;
+			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_REMOVE_CARD, myCard.info);
 		}
 	}
 
@@ -57,6 +49,13 @@ public class MyCardUnit : MonoBehaviour
 			Texture2D tex = Resources.Load(card.info.TextureResource) as Texture2D;
 			texCardImage.mainTexture = tex;
 			txtCardNum.text = myCard.num.ToString();
+		}
+		else
+		{
+			if(myCard != null)
+			{
+				txtCardNum.text = myCard.num.ToString();
+			}
 		}
 	}
 }

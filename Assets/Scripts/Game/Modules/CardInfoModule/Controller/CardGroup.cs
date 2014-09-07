@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Config;
 
-public class MyCardGroup
+public class CardGroup
 {
 	public string groupname;
-	public List<MyCard> mycardlist = new List<MyCard>();
+	public List<MyCard> cardlist = new List<MyCard>();
 }

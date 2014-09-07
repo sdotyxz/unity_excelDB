@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 65: {fileID: 6500000}
   m_Layer: 8
-  m_Name: Control - Simple Button
+  m_Name: btnAddCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,8 +1004,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400122}
+  - 114: {fileID: 11400212}
   m_Layer: 8
-  m_Name: MyCardList
+  m_Name: CardGroupStorage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1021,7 +1022,7 @@ GameObject:
   - 4: {fileID: 400124}
   - 114: {fileID: 11400138}
   m_Layer: 8
-  m_Name: MyCardListGrid
+  m_Name: CardGroupGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1165,8 +1166,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400142}
+  - 114: {fileID: 11400206}
   m_Layer: 8
-  m_Name: MyCard
+  m_Name: CardStorage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1216,7 +1218,7 @@ GameObject:
   - 4: {fileID: 400148}
   - 114: {fileID: 11400160}
   m_Layer: 8
-  m_Name: MyCardGrid
+  m_Name: CardGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2480,7 +2482,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -138, y: 81, z: 0}
+  m_LocalPosition: {x: -121, y: 64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400144}
@@ -3072,7 +3074,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: Button
+  mText: Add
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -3115,11 +3117,7 @@ MonoBehaviour:
   pressedSprite: 
   disabledSprite: 
   pixelSnap: 0
-  onClick:
-  - mTarget: {fileID: 11400012}
-    mMethodName: AddToMyCard
-    mParameters: []
-    oneShot: 0
+  onClick: []
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3286,10 +3284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carddesc: {fileID: 11400210}
-  txtCardEffect: {fileID: 0}
-  txtCardName: {fileID: 11400016}
-  txtCardDes: {fileID: 11400008}
-  texCardImage: {fileID: 11400006}
+  cardStorage: {fileID: 11400206}
+  groupStorage: {fileID: 11400212}
   popColor: {fileID: 11400090}
   popLevel: {fileID: 11400072}
   popKind: {fileID: 11400066}
@@ -3297,6 +3293,7 @@ MonoBehaviour:
   popSerials: {fileID: 11400042}
   inputName: {fileID: 11400150}
   inputNo: {fileID: 11400166}
+  btnAddCard: {fileID: 11400004}
   btnSaveGroup: {fileID: 11400178}
   btnDeleteGroup: {fileID: 11400020}
   inputGroup: {fileID: 11400026}
@@ -6709,9 +6706,9 @@ MonoBehaviour:
   arrangement: 0
   sorting: 0
   pivot: 0
-  maxPerLine: 6
-  cellWidth: 55
-  cellHeight: 70
+  maxPerLine: 4
+  cellWidth: 80
+  cellHeight: 110
   animateSmoothly: 0
   hideInactive: 1
   keepWithinPanel: 0
@@ -7756,6 +7753,19 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
+--- !u!114 &11400206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01aa3edbb176d4807847b3e4bd9e41ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storageTemplate: {fileID: 100000, guid: c00cf970f8952c343adbfd1139507355, type: 2}
+  storageGrid: {fileID: 11400160}
 --- !u!114 &11400208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7788,6 +7798,19 @@ MonoBehaviour:
   txtCardDes: {fileID: 11400008}
   tableEffect: {fileID: 11400200}
   txtDes: {fileID: 11400194}
+--- !u!114 &11400212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404b26b56923842a5b9c0f33ade93f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storageTemplate: {fileID: 100000, guid: b62f3d98da42f0d42aa850e3468928a4, type: 2}
+  storageGrid: {fileID: 11400138}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

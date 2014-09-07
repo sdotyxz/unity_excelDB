@@ -18,16 +18,13 @@ public class GameData
 	public string PlayerName;
 	public float MusicVolume;
 
-	public List<CardInfo> MyCardList;
-
-	public List<MyCardGroup> CardGroupList;
+	public List<CardGroup> CardGroupList;
 
 	public GameData()
 	{
 		PlayerName = "Player";
 		MusicVolume = 0.6f;
-		MyCardList = new List<CardInfo>();
-		CardGroupList = new List<MyCardGroup>();
+		CardGroupList = new List<CardGroup>();
 	}
 }
 

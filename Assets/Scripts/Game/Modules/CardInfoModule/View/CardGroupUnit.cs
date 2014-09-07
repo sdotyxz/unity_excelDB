@@ -2,11 +2,11 @@
 using System.Collections;
 using PureMVC.Patterns;
 
-public class MyCardListUnit : MonoBehaviour 
+public class CardGroupUnit : MonoBehaviour 
 {
 	public UIButton btnGroup;
 	public UILabel txtListName;
-	private MyCardGroup myCardGroup;
+	private CardGroup myCardGroup;
 
 	void Start()
 	{
@@ -21,11 +21,11 @@ public class MyCardListUnit : MonoBehaviour
 		}
 	}
 
-	public void UpdateUnit(MyCardGroup cardGroup)
+	public void UpdateUnit(CardGroup group)
 	{
-		if(myCardGroup != cardGroup)
+		if(myCardGroup != group)
 		{
-			myCardGroup = cardGroup;
+			myCardGroup = group;
 			txtListName.text = myCardGroup.groupname;
 		}
 	}

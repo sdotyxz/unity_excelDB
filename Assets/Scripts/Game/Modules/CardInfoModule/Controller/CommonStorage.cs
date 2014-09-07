@@ -9,6 +9,8 @@ public class CommonStorage : MonoBehaviour
 	public UIGrid storageGrid;
 	private List<GameObject> slotlist = new List<GameObject>();
 
+	public UIEventListener.VoidDelegate OnBuildFinish;
+
 	public void Build(int size)
 	{
 		if(storageTemplate != null)
@@ -28,6 +30,10 @@ public class CommonStorage : MonoBehaviour
 		yield return new WaitForSeconds(0.1f);
 		storageGrid.Reposition();
 		HideAllSlot();
+		if(OnBuildFinish != null)
+		{
+			OnBuildFinish(this.gameObject);
+		}
 	}
 
 	public void Clear()

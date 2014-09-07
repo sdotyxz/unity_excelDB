@@ -49,7 +49,7 @@ public class CardInfoMediator : Mediator
 			OnShowInfo((CardInfo)notification.Body);
 			break;
 		case CardInfoNotes.CARDINFO_SHOW_GROUP:
-			OnShowGroup((MyCardGroup)notification.Body);
+			OnShowGroup((CardGroup)notification.Body);
 			break;
 		case CardInfoNotes.CARDINFO_REMOVE_CARD:
 			OnRemoveInfo((CardInfo)notification.Body);
@@ -58,12 +58,11 @@ public class CardInfoMediator : Mediator
                 break;
         }
     }
-
-	void OnShowGroup (MyCardGroup myCardGroup)
+	void OnShowGroup (CardGroup group)
 	{
 		if(_UI != null)
 		{
-			_UI.ShowGroup(myCardGroup);
+			_UI.ShowGroupCards(group);
 		}
 	}
 

@@ -14,6 +14,13 @@ public class CardDesc : MonoBehaviour
 	public UILabel txtDes;
 
 	private CardInfo mCardInfo;
+	public CardInfo cardinfo
+	{
+		get
+		{
+			return mCardInfo;
+		}
+	}
 
 	public void UpdateCardDes(CardInfo info)
 	{
