@@ -21,6 +21,7 @@ public class MyCard
 public class MyCardUnit : MonoBehaviour 
 {
 	public UIButton btnRemove;
+	public UIButton btnShowCard;
 
 	public UITexture texCardImage;
 	public UILabel txtCardNum;
@@ -31,6 +32,15 @@ public class MyCardUnit : MonoBehaviour
 	void Start()
 	{
 		Pool.GetComponent<UIEventListener>(btnRemove).onClick = OnClickbtnRemove;
+		Pool.GetComponent<UIEventListener>(btnShowCard).onClick = OnClickbtnShowCard;
+	}
+
+	void OnClickbtnShowCard (GameObject go)
+	{
+		if(myCard != null)
+		{
+			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_SHOW_INFO, myCard.info);
+		}
 	}
 
 	void OnClickbtnRemove (GameObject go)
