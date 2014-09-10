@@ -1,4 +1,4 @@
-//Comment: Below is format definition of OnScreenText(Short for OT), #1 and #2 means text can replace, 
+﻿//Comment: Below is format definition of OnScreenText(Short for OT), #1 and #2 means text can replace, 
 //Queue from 1
 
 CARD_COLOR_1=青
@@ -14,3 +14,7 @@ CARD_TYPE=種類:#1
 GROUP_RULE_1=デッキの枚数は54枚です。(#1/54枚)
 GROUP_RULE_2=ひとつのデッキの中に、レベル0でないリンクフレーム（Σ・Ω）を持つカードは合計16枚入れなくてはなりません。それより多くなっても少なくなってもいけません。(#1/16枚)
 GROUP_RULE_3=ひとつのデッキの中に、レベル0のプログレスは４枚入れなくてはなりません。それより多くなっても少なくなってもいけません(#1/4枚)
+
+GROUP_RULE_C_1=构成一幅卡组的卡片张数为54张(#1/54张)
+GROUP_RULE_C_2=同一幅卡组中0级以外的持有“链接外框”的卡，即是带有“Σ”“Ω”的卡的数量应为16张，这些卡片的数量不能多于也不能少于16张(#1/16张)
+GROUP_RULE_C_3=同一幅卡组中0级的进化者卡片应为4张，这些卡片的数量不能多于也不能少于4张(#1/4张)

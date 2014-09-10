@@ -12,6 +12,96 @@ MonoBehaviour:
   m_Name: Config.CardInfoDataEntity
   m_EditorClassIdentifier: 
   data:
+  - CardNo: B1-001
+    CardName: "\u8CB4\u65CF\u3000\u30AB\u30C8\u30EA\u30FC\u30CC\u30FB\u30AA\u30D9\u30FC\u30EB"
+    Rare: R
+    Type: PG
+    Level: 1
+    Color: "\u9752"
+    Linkframe: "\u03A9"
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E]\u62BD\u4E24\u5F20\u5361\uFF0C\u4E22\u5F03\u4E24\u5F20\u81EA\u5DF1\u7684\u624B\u724C\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-001.1
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-002
+    CardName: "\u65B0\u5165\u751F\u3000\u5CB8\u90E8\u6C99\u7E54"
+    Rare: C
+    Type: PG
+    Level: 1
+    Color: "\u9752"
+    Linkframe: "\u03A3"
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-002.2
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-003
+    CardName: "\u6EA2\u308C\u308B\u597D\u5947\u5FC3\u3000\u5CB8\u90E8\u6C99\u7E54"
+    Rare: U
+    Type: PG
+    Level: 2
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2460\u03A3\u03A3\uFF3D\u67E5\u770B\u81EA\u5DF1\u724C\u5E93\u9876\u7AEF\u7684\u5361\uFF0C\u9009\u62E9\u653E\u56DE\u724C\u5E93\u9876\u7AEF\u6216\u5F03\u724C\u533A\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-003.3
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-004
+    CardName: "\u9759\u304B\u306A\u512A\u3057\u3055\u3000\u5CB8\u90E8\u6C99\u7E54"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u03A3\u03A3\u03A3\uFF3D\u67E5\u770B\u81EA\u5DF1\u724C\u5E93\u9876\u7AEF\u7684\u5361\uFF0C\u9009\u62E9\u653E\u56DE\u724C\u5E93\u9876\u7AEF\u6216\u5F03\u724C\u533A\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-004.4
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-005
+    CardName: "\u6226\u3046\u6C7A\u610F\u3000\u5CB8\u90E8\u6C99\u7E54"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A3\u03A3\uFF3D\u8FD9\u5F20\u5361\u56DE\u5230\u82CF\u9192\u72B6\u6001\uFF0C\u8FD9\u6B21\u6218\u6597\u4E2D\uFF0C\u8FD9\u5F20\u5361\u529B\u91CF\uFF0B3000\u3002\u8FD9\u4E2A\u80FD\u529B\u4E00\u56DE\u5408\u53EA\u80FD\u4F7F\u7528\u4E00\u6B21\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-005.5
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-006
     CardName: "\u5B66\u7D1A\u59D4\u54E1\u3000\u7434\u5439\u6587"
     Rare: C
@@ -21,15 +111,15 @@ MonoBehaviour:
     Linkframe: null
     Buster: 0
     EffectText: null
-    DescribeText: "\u5B66\u7D1A\u59D4\u54E1\u3067\u3042\u308B\u6587\u304C\u3044\u308B\u3060\u3051\u3067\u3001\u4F55\u6545\u304B\u30AF\u30E9\u30B9\u304C\u307E\u3068\u307E\u308B\u306E\u3060\u3002"
+    DescribeText: 
     Power: 5000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 2
-    Illustrator: "\u4E03"
-    TextureResource: AVST1/B1-006
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-006.6
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-007
     CardName: "\u30B2\u30FC\u30DE\u30FC\u5C11\u5973\u3000\u7434\u5439\u6587"
     Rare: C
@@ -38,17 +128,16 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2460\u03A3\u03A9\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B5000\u3002"
-    DescribeText: "\u6587\u306E\u76EE\u306B\u306F\u4F55\u3067\u3082\u898B\u3048\u3066\u3044\u308B\u3002\u6575\u306E\u52D5\u304D\u3082\u2026\u2026\u5F31\u70B9\u3067\u3055\u3048\u3082\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
     Power: 8000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
-    Illustrator: "\u4E03"
-    TextureResource: AVST1/B1-007
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-007.7
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-008
     CardName: "\u5168\u56FD\u30E9\u30F3\u30AB\u30FC\u3000\u7434\u5439\u6587"
     Rare: U
@@ -57,17 +146,16 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF7\u2010\u2460\u03A3\u03A9\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B4000\u3002"
-    DescribeText: "\u300C\u78BA\u304B\u306B\u79C1\u306E\u76EE\u306F\u3088\u304F\u898B\u3048\u308B\u3051\u3069\u3001\u898B\u3048\u308B\u306E\u3068\u52D5\u3051\u308B\u306E\u306F\u9055\u3046\u3088\u300D"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
     Power: 10000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
-    Illustrator: "\u4E03"
-    TextureResource: AVST1/B1-008
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-008.8
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-009
     CardName: "\u5F8C\u8F29\u3000\u4F50\u4E45\u826F\u821E\u8863\u83DC"
     Rare: U
@@ -76,16 +164,124 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: "\u03A3"
     Buster: 0
-    EffectText: "3#\uFF3B\u6A2A\u7F6E\uFF3D\u3042\u306A\u305F\u306E\u5C71\u672D\u306E\u4E0A\u3092\u898B\u3066\u3001\u5C71\u672D\u306E\u4E0A\u304B\u6368\u672D\u306B\u7F6E\u304F\u3002"
-    DescribeText: "\u300C\u5148\u8F29\u3063\uFF01\u300D\u898B\u3064\u3081\u308B\u821E\u8863\u83DC\u306E\u77B3\u306B\u306F\u3001\u5922\u3068\u5E0C\u671B\u304C\u8F1D\u3044\u3066\u3044\u308B\u3002"
+    EffectText: "3#[\u6A2A\u7F6E]\u67E5\u770B\u81EA\u5DF1\u724C\u5E93\u9876\u7AEF\u7684\u5361\uFF0C\u9009\u62E9\u653E\u56DE\u724C\u5E93\u9876\u7AEF\u6216\u5F03\u724C\u533A\u3002"
+    DescribeText: 
     Power: 6000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 0
-    Illustrator: "\u4E00\u8449\u30E2\u30AB"
-    TextureResource: AVST1/B1-009
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-009.9
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-010
+    CardName: "\u53E3\u4E0B\u624B\u5C11\u5973\u3000\u97F3\u7FBD\u30C4\u30D0\u30B5"
+    Rare: U
+    Type: PG
+    Level: 2
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A9\u03A9\u03A9\uFF3D\u62BD\u4E00\u5F20\u5361\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-010.10
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-011
+    CardName: "\u4E00\u5339\u72FC\u3000\u97F3\u7FBD\u30C4\u30D0\u30B5"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u84DD\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-011.11
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-012
+    CardName: "\u4FE1\u3058\u308B\u529B\u3000\u97F3\u7FBD\u30C4\u30D0\u30B5"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u84DD\u8272\u8FDB\u5316\u8005\u6709\u4E24\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-012.12
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-013
+    CardName: "\u5F13\u9053\u90E8\u3000\u5FD7\u85E4\u51DB\u82B1"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-013.13
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-014
+    CardName: "\u7F8E\u3057\u304D\u5C04\u624B\u3000\u5FD7\u85E4\u51DB\u82B1"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B8000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-014.14
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-015
+    CardName: "\u5FC5\u4E2D\u306E\u5C04\u624B\u3000\u5FD7\u85E4\u51DB\u82B1"
+    Rare: R
+    Type: PG
+    Level: 4
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u84DD\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u3001\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-015.15
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-016
     CardName: "\u9678\u4E0A\u90E8\u3000\u571F\u5C4B\u539F\u306F\u306D\u308B"
     Rare: C
@@ -94,17 +290,16 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF5\u2010\u2461\u03A3\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B6000\u3002"
-    DescribeText: "\u300C\u30A2\u30B9\u30EA\u30FC\u30C8\u3060\u304B\u3089\u306D\uFF01\u300D\u306F\u306D\u308B\u306F\u305D\u3046\u8A00\u3046\u3068\u3001\u4EBA\u61D0\u3063\u3053\u304F\u7B11\u3046\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
     Power: 6000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
-    Illustrator: "\u30CB\u30EA\u30C4"
-    TextureResource: AVST1/B1-016
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-016.16
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-017
     CardName: "\u30A2\u30B9\u30EA\u30FC\u30C8\u3000\u571F\u5C4B\u539F\u306F\u306D\u308B"
     Rare: C
@@ -113,17 +308,16 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2461\u03A9\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B4000\u3002"
-    DescribeText: "\u8D70\u308B\u524D\u306F\u308F\u304F\u308F\u304F\u3059\u308B\u3002\u3053\u306E\u8DB3\u306F\u9060\u304F\u9AD8\u304F\u3001\u81EA\u5206\u3092\u904B\u3093\u3067\u304F\u308C\u308B"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2461\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
     Power: 8000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
-    Illustrator: "\u30CB\u30EA\u30C4"
-    TextureResource: AVST1/B1-017
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-017.17
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-018
     CardName: "\u5168\u529B\u75BE\u8D70\u3000\u571F\u5C4B\u539F\u306F\u306D\u308B"
     Rare: U
@@ -132,35 +326,196 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF8\u2010\u2460\u03A3\u03A9\u03A9\uFF3D
-      1\u679A\u5F15\u304D\u3001\u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B3000\u3002"
-    DescribeText: "\u300C\u3077\u306F\u3041\u30FC\u3063\u3001\u6C17\u6301\u3061\u30A4\u30A4\uFF01\u3000\u3093\uFF1F\u3000\u306A\uFF5E\u306B\u30B8\u30ED\u30B8\u30ED\u898B\u3066\u3093\u306E\uFF1F\u300D"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2460\u03A3\u03A9\u03A9\uFF3D\u62BD\u4E00\u5F20\u5361\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
     Power: 10000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 1
-    Illustrator: "\u30CB\u30EA\u30C4"
-    TextureResource: AVST1/B1-018
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-018.18
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-019
     CardName: "\u76EE\u899A\u3081\u305F\u53EF\u80FD\u6027\u3000\u65E5\u5411\u7F8E\u6D77"
     Rare: C
     Type: PG
     Level: 1
     Color: "\u9752"
-    Linkframe: null
+    Linkframe: "\u03A9"
     Buster: 0
-    EffectText: "3#1\u679A\u5F15\u304D\u3001\u3042\u306A\u305F\u306E\u624B\u672D\u30921\u679A\u9078\u3073\u3001\u6368\u672D\u306B\u7F6E\u304D\u3001\u4ED6\u306E\u3042\u306A\u305F\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u9078\u3073\u3001\u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u30D1\u30EF\u30FC\u3092\uFF0B1000\u3002"
-    DescribeText: "\u6D77\u306B\u56F2\u307E\u308C\u305F\u9752\u862D\u5CF6\u3067\u3001\u7F8E\u6D77\u306E\u65B0\u3057\u3044\u751F\u6D3B\u304C\u59CB\u307E\u308D\u3046\u3068\u3057\u3066\u3044\u305F\u3002"
+    EffectText: "3#[\u6A2A\u7F6E]\u62BD\u4E00\u5F20\u5361\uFF0C\u4E22\u5F03\u4E00\u5F20\u81EA\u5DF1\u7684\u624B\u724C\uFF0C\u9009\u62E9\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
     Power: 6000
     GuardPoint: 4000
     Feature1: "\u4EBA\u9593"
     Feature2: "\u8D85\u80FD\u529B"
     Strike: 0
-    Illustrator: "\u307F\u308F\u3079\u3055\u304F\u3089"
-    TextureResource: AVST1/B1-019
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-019.19
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-020
+    CardName: "\u65B0\u5165\u751F\u3000\u65E5\u5411\u7F8E\u6D77"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-020.20
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-021
+    CardName: "\u5973\u5B50\u9AD8\u751F\u3000\u65E5\u5411\u7F8E\u6D77"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-021.21
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-022
+    CardName: "\u3055\u3055\u3084\u304B\u306A\u65E5\u5E38\u3000\u65E5\u5411\u7F8E\u6D77"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2461\u03A9\u03A9\uFF3D\u62BD\u4E00\u5F20\u5361\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-022.22
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-023
+    CardName: "\u9032\u5316\u3059\u308B\u53EF\u80FD\u6027\u3000\u65E5\u5411\u7F8E\u6D77"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2461\u03A9\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u6BCF\u62E5\u6709\u4E24\u5F20\u624B\u724C\uFF0C\u8FD9\u5F20\u5361\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-023.23
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-024
+    CardName: "\u899A\u9192\u3000\u65E5\u5411\u7F8E\u6D77"
+    Rare: R
+    Type: PG
+    Level: 5
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 1
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002&2#\u8FD9\u5F20\u5361\u767B\u573A\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u84DD\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 11000
+    GuardPoint: 0
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-024.24
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-025
+    CardName: "\u7570\u56FD\u306E\u5C11\u5973\u3000\u30E6\u30EA\u30E4"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-025.25
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-026
+    CardName: "\u6C37\u306E\u5C11\u5973\u3000\u30E6\u30EA\u30E4"
+    Rare: C
+    Type: PG
+    Level: 4
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-026.26
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-027
+    CardName: "\u30B4\u30FC\u30B9\u30C8\u306E\u5C11\u5973"
+    Rare: C
+    Type: AC
+    Level: 2
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u84DD\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u30B4\u30FC\u30B9\u30C8 "
+    Feature2: "\u5C11\u5973"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-027.27
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-028
+    CardName: "\u8A9E\u4EE3\u8005\u306E\u58F0"
+    Rare: C
+    Type: AC
+    Level: 0
+    Color: "\u9752"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u9009\u62E9\u4F60\u7684\u4E24\u5F20\u84DD\u8272\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u30B4\u30FC\u30B9\u30C8 "
+    Feature2: "\u5C11\u5973"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-028.28
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-029
     CardName: "\u9732\u6255\u3044\u306E\u5343\u65E9"
     Rare: C
@@ -169,17 +524,17 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\uFF3B\u3042\u306A\u305F\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u30D5\u30A9\u30FC\u30EB\u3059\u308B\uFF3D
-      \u3053\u306E\u30AB\u30FC\u30C9\u304C\u30A2\u30AF\u30B7\u30E7\u30F3\u30BE\u30FC\u30F3\u306B\u7F6E\u304B\u308C\u305F\u6642\u3001\u30B3\u30B9\u30C8\u3092\u6255\u3063\u3066\u3088\u3044\u3002\u6255\u3063\u305F\u3089\u30012\u679A\u5F15\u304F\u3002"
-    DescribeText: "\u8AF8\u3005\u306E\u798D\u4E8B\u3001\u7953\u3044\u7D66\u3072\u6E05\u3081\u7D66\u3078\u2015\u2015\u5176\u306E\u8584\u8863\u306F\u3042\u3089\u3086\u308B\u90AA\u3092\u7953\u3046\u3002"
+    EffectText: "2#\uFF3B\u6A2A\u7F6E\u81EA\u5DF1\u7684\u4E00\u5F20\u8FDB\u5316\u8005\uFF3D
+      \u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u652F\u4ED8\u4EE3\u4EF7\u3002\u652F\u4ED8\u540E\uFF0C\u62BD\u4E24\u5F20\u5361\u3002"
+    DescribeText: 
     Power: 0
     GuardPoint: 4000
-    Feature1: "\u30B4\u30FC\u30B9\u30C8"
+    Feature1: "\u30B4\u30FC\u30B9\u30C8 "
     Feature2: "\u5DEB\u5973"
     Strike: 0
-    Illustrator: "\u7D50\u57CE\u30EA\u30AB"
-    TextureResource: AVST1/B1-029
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-029.29
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-030
     CardName: "\u732B\u306E\u6069\u8FD4\u3057"
     Rare: U
@@ -188,34 +543,232 @@ MonoBehaviour:
     Color: "\u9752"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u3053\u306E\u30AB\u30FC\u30C9\u304C\u30A2\u30AF\u30B7\u30E7\u30F3\u30BE\u30FC\u30F3\u306B\u7F6E\u304B\u308C\u305F\u6642\u3001\u76F8\u624B\u306E\u30EC\u30D9\u30EB4\u4EE5\u4E0B\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u9078\u3073\u3001\u624B\u672D\u306B\u623B\u3059\u3002"
-    DescribeText: "\u305D\u306E\u59FF\u306F\u3042\u306E\u96E8\u306E\u65E5\u306B\u52A9\u3051\u305F\u732B\u305D\u306E\u3082\u306E\u3060\u3063\u305F\u2026\u2026\u5927\u304D\u3055\u4EE5\u5916\u306F\u3002"
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u56DB\u7EA7\u4EE5\u4E0B\u8FDB\u5316\u8005\u56DE\u5230\u624B\u724C\u3002"
+    DescribeText: 
     Power: 0
     GuardPoint: 4000
     Feature1: "\u5996\u602A"
     Feature2: "\u5316\u3051\u732B"
     Strike: 0
-    Illustrator: "\u30AB\u30B8\u30DF\u30E4"
-    TextureResource: AVST1/B1-030
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - CardNo: B1-037
-    CardName: "\u5B89\u3089\u304E\u306E\u6642\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
-    Rare: C
+    Illustrator: 
+    TextureResource: B1-030.30
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-031
+    CardName: "\u9B54\u6CD5\u5C11\u5973\u3000\u30A2\u30D3\u30FC"
+    Rare: U
     Type: PG
-    Level: 1
+    Level: 2
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u4ED6\u306E\u3042\u306A\u305F\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u9078\u3073\u3001\u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u30D1\u30EF\u30FC\u3092\uFF0B2000\u3002"
-    DescribeText: "\u4E16\u754C\u3092\u6551\u3048\u308B\u306E\u306F\u624D\u80FD\u3042\u308B\u5C11\u5973\u3060\u3051\u3060\u3002\u305D\u3046\u3001\u81EA\u5206\u306E\u3088\u3046\u306A\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A9\uFF3D\u9009\u62E9\u4E00\u5F20\u81EA\u5DF1\u4F24\u5BB3\u533A\u8868\u5411\u7684\u5361\u4E0E\u624B\u724C\u4EA4\u6362\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
     Power: 6000
     GuardPoint: 4000
-    Feature1: "\u60AA\u9B54"
+    Feature1: "\u9B54\u5973"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-031.31
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-032
+    CardName: "\u611B\u306E\u9B54\u6CD5\u5C11\u5973\u3000\u30A2\u30D3\u30FC"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u9ED1\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u9B54\u5973"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-032.32
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-033
+    CardName: "\u714C\u3081\u304F\u5C0F\u5F57\u661F\u3000\u30A2\u30D3\u30FC"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u9ED1\u8272\u8FDB\u5316\u8005\u6709\u4E24\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u9B54\u5973"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-033.33
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-034
+    CardName: "\u30A8\u30EB\u30D5\u306E\u5263\u58EB\u3000\u30BB\u30EC\u30B9\u30C6\u30A3\u30A2"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u30A8\u30EB\u30D5"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-034.34
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-035
+    CardName: "\u6708\u5149\u306E\u821E\u3044\u3000\u30BB\u30EC\u30B9\u30C6\u30A3\u30A2"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A9\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A8\u30EB\u30D5"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-035.35
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-036
+    CardName: "\u5263\u821E\u306E\u6708\u4E59\u5973\u3000\u30BB\u30EC\u30B9\u30C6\u30A3\u30A2"
+    Rare: R
+    Type: PG
+    Level: 4
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u9ED1\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A8\u30EB\u30D5"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-036.36
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-037
+    CardName: "\u5B89\u3089\u304E\u306E\u6642\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
+    Rare: R
+    Type: PG
+    Level: 1
+    Color: "\u9ED2"
+    Linkframe: "\u03A3"
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E]\u9009\u62E9\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
     Feature2: "\u9B54\u6CD5"
     Strike: 0
-    Illustrator: "\u7D05\u7DD2"
-    TextureResource: AVST1/B1-037
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-037.37
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-038
+    CardName: "\u77E5\u8B58\u306E\u63A2\u6C42\u8005\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-038.38
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-039
+    CardName: "\u7114\u306E\u4F7F\u3044\u624B\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-039.39
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-040
+    CardName: "\u5929\u624D\u9B54\u5973\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A3\u03A3\u03A3\uFF3D\u4ECE\u81EA\u5DF1\u724C\u5E93\u4E2D\u9009\u62E9\u4E00\u5F20\u8FDB\u5316\u8005\u516C\u5F00\u540E\u52A0\u5165\u624B\u724C\uFF0C\u7136\u540E\u724C\u5E93\u6D17\u724C\uFF0C\u4E22\u5F03\u4E00\u5F20\u81EA\u5DF1\u7684\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-040.40
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-041
+    CardName: "\u7406\u6DF1\u304D\u9ED2\u9B54\u5973\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A3\u03A3\uFF3D\u5BF9\u624B\u4E22\u5F03\u4E00\u5F20\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-041.41
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-042
+    CardName: "\u899A\u9192\u3000\u30BD\u30D5\u30A3\u30FC\u30CA"
+    Rare: R
+    Type: PG
+    Level: 5
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 1
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002&2#\u8FD9\u5F20\u5361\u767B\u573A\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u9ED1\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 11000
+    GuardPoint: 0
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-042.42
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-043
     CardName: "\u5C0F\u60AA\u9B54\u3000\u30D5\u30E9\u30F3\u30DC\u30EF\u30FC\u30BA"
     Rare: C
@@ -224,17 +777,16 @@ MonoBehaviour:
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF5\u2010\u2461\u03A9\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B6000\u3002"
-    DescribeText: "\u4E16\u754C\u306E\u5371\u6A5F\u3082\u6EC5\u4EA1\u3082\u3001\u30C7\u30FC\u30E2\u30F3\u306B\u3068\u3063\u3066\u306F\u304A\u796D\u308A\u307F\u305F\u3044\u306A\u3082\u306E\u3060\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
     Power: 6000
     GuardPoint: 4000
     Feature1: "\u60AA\u9B54 "
     Feature2: "\u9B54\u6CD5"
     Strike: 1
-    Illustrator: "\u4EE3\u5B98\u5C71\u3091\u3073\u3059"
-    TextureResource: AVST1/B1-043
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-043.43
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-044
     CardName: "\u60AA\u622F\u597D\u304D\u3000\u30D5\u30E9\u30F3\u30DC\u30EF\u30FC\u30BA"
     Rare: C
@@ -243,55 +795,52 @@ MonoBehaviour:
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2461\u03A3\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B4000\u3002"
-    DescribeText: "\u5C0F\u3055\u3044\u304B\u3089\u3063\u3066\u6CB9\u65AD\u3057\u3066\u308B\u3068\u3001\u6307\u5148\u304F\u3089\u3044\u9ED2\u7126\u3052\u306B\u3055\u308C\u3061\u3083\u3046\u305E\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2461\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
     Power: 8000
     GuardPoint: 4000
-    Feature1: "\u60AA\u9B54"
+    Feature1: "\u60AA\u9B54 "
     Feature2: "\u9B54\u6CD5"
     Strike: 1
-    Illustrator: "\u4EE3\u5B98\u5C71\u3091\u3073\u3059"
-    TextureResource: AVST1/B1-044
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-044.44
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-045
     CardName: "\u75FA\u91DD\u306E\u77AC\u96F7\u3000\u30D5\u30E9\u30F3\u30DC\u30EF\u30FC\u30BA"
-    Rare: U
+    Rare: C
     Type: PG
     Level: 4
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF8\u2010\u2460\u03A3\u03A3\u03A9\uFF3D
-      \u76F8\u624B\u306F\u81EA\u5206\u306E\u624B\u672D\u30921\u679A\u9078\u3073\u3001\u6368\u672D\u306B\u7F6E\u304D\u3001\u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B3000\u3002"
-    DescribeText: "\u300C\u30A2\u30C3\u30CF\u30CF\u30CF\u3001\u30DB\u30E9\u30DB\u30E9\u9003\u3052\u306A\u3044\u3068\u30D3\u30EA\u30D3\u30EA\u3057\u3061\u3083\u3046\u305C\uFF5E\uFF01\u300D"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2460\u03A3\u03A3\u03A9\uFF3D\u5BF9\u624B\u4E22\u5F03\u4E00\u5F20\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
     Power: 10000
     GuardPoint: 4000
-    Feature1: "\u60AA\u9B54"
+    Feature1: "\u60AA\u9B54 "
     Feature2: "\u9B54\u6CD5"
     Strike: 1
-    Illustrator: "\u4EE3\u5B98\u5C71\u3091\u3073\u3059"
-    TextureResource: AVST1/B1-045
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-045.45
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-046
     CardName: "\u5931\u6557\u7D9A\u304D\u306E\u932C\u91D1\u5E2B\u3000\u30B1\u30A4"
-    Rare: C
+    Rare: U
     Type: PG
     Level: 2
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2460\u03A3\u03A9\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B5000\u3002"
-    DescribeText: "\u7206\u767A\u3068\u5171\u306B\u7570\u69D8\u306A\u81ED\u3044\u304C\u8FBA\u308A\u306B\u6F02\u3046\u3002\u2026\u2026\u672C\u65E5\u306E\u5931\u6557\u3001\u4E94\u5EA6\u76EE\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
     Power: 6000
     GuardPoint: 4000
     Feature1: "\u9B54\u5973"
     Feature2: "\u932C\u91D1\u8853"
     Strike: 1
-    Illustrator: "\u5E0C"
-    TextureResource: AVST1/B1-046
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-046.46
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-047
     CardName: "\u7814\u7A76\u71B1\u5FC3\u306A\u932C\u91D1\u5E2B\u3000\u30B1\u30A4"
     Rare: C
@@ -301,15 +850,15 @@ MonoBehaviour:
     Linkframe: null
     Buster: 0
     EffectText: null
-    DescribeText: "\u8AB0\u3082\u898B\u305F\u3053\u3068\u306E\u306A\u3044\u9B54\u6CD5\u3092\u4F5C\u308A\u305F\u3044\u3002\u305D\u308C\u304C\u5F7C\u5973\u306E\u5927\u304D\u306A\u5922\u3060\u3002"
+    DescribeText: 
     Power: 8000
     GuardPoint: 4000
     Feature1: "\u9B54\u5973"
     Feature2: "\u932C\u91D1\u8853"
     Strike: 2
-    Illustrator: "\u5E0C"
-    TextureResource: AVST1/B1-047
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-047.47
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-048
     CardName: "\u5E38\u8B58\u7815\u304D\u306E\u932C\u91D1\u5E2B\u3000\u30B1\u30A4"
     Rare: U
@@ -318,54 +867,197 @@ MonoBehaviour:
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF7\u2010\u2460\u03A3\u03A9\uFF3D
-      \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B4000\u3002"
-    DescribeText: "\u300C\u3042\u3001\u3042\u308C\uFF1F\u3000\u3053\u306E\u53CD\u5FDC\u306F\u2026\u2026\u3082\u3057\u304B\u3057\u3066\u3001\u6210\u529F\u3057\u3061\u3083\u3063\u305F!?\u300D"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
     Power: 10000
     GuardPoint: 4000
     Feature1: "\u9B54\u5973"
     Feature2: "\u932C\u91D1\u8853"
     Strike: 1
-    Illustrator: "\u5E0C"
-    TextureResource: AVST1/B1-048
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - CardNo: B1-056
-    CardName: "\u76EE\u9192\u3081\u305F\u6DD1\u5973\u3000\u30A2\u30A4\u30EA\u30FC\u30F3"
-    Rare: U
+    Illustrator: 
+    TextureResource: B1-048.48
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-049
+    CardName: "\u8594\u8587\u8272\u306E\u65E5\u3005\u3000\u30EA\u30BC\u30EA\u30C3\u30BF"
+    Rare: C
     Type: PG
     Level: 1
     Color: "\u9ED2"
-    Linkframe: null
+    Linkframe: "\u03A9"
     Buster: 0
-    EffectText: null
-    DescribeText: "\u4E38\u3044\u95A2\u7BC0\u3092\u52D5\u304B\u3057\u3001\u695A\u3005\u3068\u793C\u3092\u3059\u308B\u3002\u5927\u304D\u306A\u30AC\u30E9\u30B9\u306E\u77B3\u304C\u77AC\u3044\u305F\u3002"
-    Power: 5000
+    EffectText: "3#[\u6A2A\u7F6E]\u9009\u62E9\u4E00\u5F20\u81EA\u5DF1\u4F24\u5BB3\u533A\u8868\u5411\u7684\u5361\u4E0E\u624B\u724C\u4EA4\u6362\u3002"
+    DescribeText: 
+    Power: 6000
     GuardPoint: 4000
-    Feature1: "\u4EBA\u5F62"
+    Feature1: "\u60AA\u9B54 "
     Feature2: "\u9B54\u6CD5"
-    Strike: 1
-    Illustrator: "\u4E00\u8449\u30E2\u30AB"
-    TextureResource: AVST1/B1-056
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - CardNo: B1-057
-    CardName: "\u708E\u72FC\u30D6\u30EC\u30A4\u30BA"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-049.49
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-050
+    CardName: "\u7518\u7F8E\u306A\u68D8\u3000\u30EA\u30BC\u30EA\u30C3\u30BF"
     Rare: U
     Type: PG
     Level: 2
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\uFF3B\u3042\u306A\u305F\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u30D5\u30A9\u30FC\u30EB\u3059\u308B\uFF3D
-      \u3053\u306E\u30AB\u30FC\u30C9\u304C\u30A2\u30AF\u30B7\u30E7\u30F3\u30BE\u30FC\u30F3\u306B\u7F6E\u304B\u308C\u305F\u6642\u3001\u30B3\u30B9\u30C8\u3092\u6255\u3063\u3066\u3088\u3044\u3002\u6255\u3063\u305F\u3089\u3001\u76F8\u624B\u306E\u30EC\u30D9\u30EB4\u4EE5\u4E0B\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u9078\u3073\u3001\u9000\u5374\u3055\u305B\u308B\u3002"
-    DescribeText: "\u8E0F\u307F\u51FA\u3059\u305F\u3073\u306B\u7A7A\u6C17\u304C\u71B1\u304F\u7126\u3052\u308B\u3002\u305D\u306E\u72FC\u306F\u5168\u8EAB\u306B\u708E\u3092\u7E8F\u3046\u3002"
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A3\u03A3\u03A3\uFF3D\u4ECE\u81EA\u5DF1\u724C\u5E93\u4E2D\u9009\u62E9\u4E00\u5F20\u8FDB\u5316\u8005\u516C\u5F00\u540E\u52A0\u5165\u624B\u724C\uFF0C\u7136\u540E\u724C\u5E93\u6D17\u724C\uFF0C\u4E22\u5F03\u4E00\u5F20\u81EA\u5DF1\u7684\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-050.50
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-051
+    CardName: "\u5996\u8276\u306A\u60AA\u9B54\u3000\u30EA\u30BC\u30EA\u30C3\u30BF"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u03A9\u03A9\u03A9\uFF3D\u9009\u62E9\u4E00\u5F20\u81EA\u5DF1\u4F24\u5BB3\u533A\u8868\u5411\u7684\u5361\u4E0E\u624B\u724C\u4EA4\u6362\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-051.51
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-052
+    CardName: "\u6BD2\u591C\u306E\u95C7\u8594\u8587\u3000\u30EA\u30BC\u30EA\u30C3\u30BF"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2461\u03A9\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B3000\uFF0C\u653B\u51FB\u529B\uFF0B1\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-052.52
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-053
+    CardName: "\u7720\u308A\u306E\u6B7B\u4EBA\u559A\u3000\u30B5\u30FC\u30B7\u30E3"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B8000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u9B54\u5973"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-053.53
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-054
+    CardName: "\u9019\u3044\u5BC4\u308B\u6B7B\u4EBA\u559A\u3000\u30B5\u30FC\u30B7\u30E3"
+    Rare: C
+    Type: PG
+    Level: 4
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u9B54\u5973"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-054.54
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-055
+    CardName: "\u9B54\u77F3\u3092\u8A60\u3080\u8005\u3000\u30AA\u30EA\u30F4\u30A3\u30A2"
+    Rare: R
+    Type: PG
+    Level: 1
+    Color: "\u9ED2"
+    Linkframe: "\u03A3"
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E\u3001\u6A2A\u7F6E\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF3D\u4ECE\u81EA\u5DF1\u724C\u5E93\u4E2D\u9009\u62E9\u4E00\u5F20\u8FDB\u5316\u8005\u516C\u5F00\u540E\u52A0\u5165\u624B\u724C\uFF0C\u7136\u540E\u724C\u5E93\u6D17\u724C\uFF0C\u4E22\u5F03\u4E00\u5F20\u624B\u724C\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u9B54\u5973"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-055.55
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-056
+    CardName: "\u76EE\u9192\u3081\u305F\u6DD1\u5973\u3000\u30A2\u30A4\u30EA\u30FC\u30F3"
+    Rare: U
+    Type: PG
+    Level: 1
+    Color: "\u9ED2"
+    Linkframe: "\u03A9"
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u5F62"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-056.56
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-057
+    CardName: "\u708E\u72FC\u30D6\u30EC\u30A4\u30BA"
+    Rare: U
+    Type: AC
+    Level: 2
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\uFF3B\u6A2A\u7F6E\u81EA\u5DF1\u7684\u4E00\u5F20\u8FDB\u5316\u8005\uFF3D
+      \u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u652F\u4ED8\u4EE3\u4EF7\u3002\u652F\u4ED8\u540E\uFF0C\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u56DB\u7EA7\u4EE5\u4E0B\u8FDB\u5316\u8005\u9000\u573A\u3002"
+    DescribeText: 
     Power: 0
     GuardPoint: 4000
     Feature1: "\u9B54\u7363"
     Feature2: "\u30A6\u30EB\u30D5"
     Strike: 0
-    Illustrator: "\u304B\u3093\u304F\u308D\u3046"
-    TextureResource: AVST1/B1-057
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
+    Illustrator: 
+    TextureResource: B1-057.57
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-058
+    CardName: "\u30B4\u30D6\u30EA\u30F3\u306E\u86EE\u52C7"
+    Rare: C
+    Type: AC
+    Level: 2
+    Color: "\u9ED2"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u9ED1\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u9B54\u7363"
+    Feature2: "\u30B4\u30D6\u30EA\u30F3"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-058.58
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
   - CardNo: B1-059
     CardName: "\u8A98\u3046\u53E3\u7B1B"
     Rare: C
@@ -374,123 +1066,1184 @@ MonoBehaviour:
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: "2#\u3053\u306E\u30AB\u30FC\u30C9\u304C\u30A2\u30AF\u30B7\u30E7\u30F3\u30BE\u30FC\u30F3\u306B\u7F6E\u304B\u308C\u305F\u6642\u3001\u3042\u306A\u305F\u306E\u9ED2\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u304C\u3044\u308B\u306A\u3089\u3001\u76F8\u624B\u306E\u30EC\u30D9\u30EB2\u4EE5\u4E0B\u306E\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u9078\u3073\u3001\u9000\u5374\u3055\u305B\u308B\u3002"
-    DescribeText: "\u3055\u3042\u2026\u2026\u30E9\u30DF\u30A2\u306E\u53E3\u7B1B\u3092\u805E\u3044\u305F\u306A\u3089\u3001\u3082\u3046\u3042\u306A\u305F\u306F\u9B54\u6027\u306E\u865C\u3002"
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u4F60\u7684\u573A\u4E0A\u6709\u9ED1\u8272\u8FDB\u5316\u8005\u65F6\uFF0C\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u4E8C\u7EA7\u4EE5\u4E0B\u7684\u8FDB\u5316\u8005\u9000\u573A\u3002"
+    DescribeText: 
     Power: 0
     GuardPoint: 4000
     Feature1: "\u9B54\u7363"
     Feature2: "\u30E9\u30DF\u30A2"
     Strike: 0
-    Illustrator: "\u304B\u3093\u304F\u308D\u3046"
-    TextureResource: AVST1/B1-059
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - CardNo: S1-001
-    CardName: "\u8B58\u308B\u8005\u3000\u9759\u5BAE\u862D"
-    Rare: ST
-    Type: PG
-    Level: 3
-    Color: "\u9752"
-    Linkframe: null
-    Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u03A3\u03A9\u03A9\uFF3D
-      1\u679A\u5F15\u304D\u3001\u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B2000\u3002"
-    DescribeText: "\u300C\u4E16\u754C\u306E\u771F\u5B9F\u306B\u8FD1\u4ED8\u304F\u306E\u306F\u4E00\u4F53\u8AB0\u306A\u306E\u304B\u2026\u2026\u697D\u3057\u307F\u3067\u3059\u300D"
-    Power: 8000
-    GuardPoint: 4000
-    Feature1: "\u4EBA\u9593"
-    Feature2: "\u8D85\u80FD\u529B"
-    Strike: 1
-    Illustrator: "\u4ECA\u91CE\u96BC\u53F2"
-    TextureResource: AVST1/S1-001
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - CardNo: S1-002
-    CardName: "\u5341\u4E8C\u6756\u3000\u30CF\u30A4\u30C7\u30A3"
-    Rare: ST
-    Type: PG
-    Level: 4
-    Color: "\u9ED2"
-    Linkframe: null
-    Buster: 0
-    EffectText: "2#\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF7\u2010\u03A3\u03A3\u03A9\u03A9\uFF3D
-      \u3042\u306A\u305F\u306E\u5C71\u672D\u3092\u898B\u3066\u30D7\u30ED\u30B0\u30EC\u30B9\u30921\u679A\u307E\u3067\u9078\u3093\u3067\u516C\u958B\u3057\u3001\u624B\u672D\u306B\u52A0\u3048\u3001\u305D\u306E\u5C71\u672D\u3092\u30B7\u30E3\u30C3\u30D5\u30EB\u3057\u3001\u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B4000\u3002"
-    DescribeText: "\u300C\u9B54\u5973\u738B\u306E\u547D\u3088\u3001\u5C11\u3057\u3060\u3051\u308F\u305F\u304F\u3057\u306E\u529B\u3092\u8CB8\u3057\u3066\u5DEE\u3057\u4E0A\u3052\u308B\u308F\u300D"
-    Power: 10000
-    GuardPoint: 4000
-    Feature1: "\u9B54\u5973"
-    Feature2: "\u9B54\u6CD5"
-    Strike: 1
-    Illustrator: "\u4ECA\u91CE\u96BC\u53F2"
-    TextureResource: AVST1/S1-002
-    Serials: "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - CardNo: S1-003
-    CardName: "\u65E5\u5411\u7F8E\u6D77"
+    Illustrator: 
+    TextureResource: B1-059.59
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-060
+    CardName: "\u7A7A\u99C6\u3051\u308B\u9ED2\u304D\u7FFC\u7ADC"
     Rare: C
-    Type: PG
-    Level: 0
-    Color: "\u9752"
-    Linkframe: null
-    Buster: 0
-    EffectText: null
-    DescribeText: "\u8EAB\u9577158cm\u3002\u30AF\u30EC\u30FC\u30D7\u3068\u6D77\u304C\u5927\u597D\u304D\u306A\u3001\u660E\u308B\u304F\u5143\u6C17\u306A\u5973\u5B50\u9AD8\u6821\u751F\u3002"
-    Power: 5000
-    GuardPoint: 4000
-    Feature1: "\u4EBA\u9593"
-    Feature2: "\u8D85\u80FD\u529B"
-    Strike: 0
-    Illustrator: "\u4E2D\u6751\u714C"
-    TextureResource: AVST1/S1-003
-    Serials: "\u7B2C1\u7AE0 \u904B\u547D\u9082\u9005\u306E\u56DB\u4E16\u754C"
-  - CardNo: S1-004
-    CardName: "\u30BD\u30D5\u30A3\u30FC\u30CA"
-    Rare: C
-    Type: PG
+    Type: AC
     Level: 0
     Color: "\u9ED2"
     Linkframe: null
     Buster: 0
-    EffectText: null
-    DescribeText: "\u8EAB\u9577154cm\u3002\u624D\u80FD\u8C4A\u304B\u306A\u5929\u624D\u9B54\u5973\u3002\u30D0\u30AB\u306B\u3055\u308C\u308B\u3068\u3059\u3054\u304F\u6012\u308B\u3002"
-    Power: 5000
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u9009\u62E9\u4F60\u7684\u4E24\u5F20\u9ED1\u8272\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
     GuardPoint: 4000
-    Feature1: "\u60AA\u9B54"
-    Feature2: "\u9B54\u6CD5"
+    Feature1: "\u9B54\u7363"
+    Feature2: "\u30C9\u30E9\u30B4\u30F3"
     Strike: 0
-    Illustrator: "\u4E2D\u6751\u714C"
-    TextureResource: AVST1/S1-004
-    Serials: "\u7B2C1\u7AE0 \u904B\u547D\u9082\u9005\u306E\u56DB\u4E16\u754C"
-  - CardNo: S1-005
-    CardName: "\u30A2\u30A6\u30ED\u30E9"
+    Illustrator: 
+    TextureResource: B1-060.60
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-061
+    CardName: "\u8A18\u61B6\u55AA\u5931\u3000\u30A2\u30A6\u30ED\u30E9"
     Rare: C
     Type: PG
-    Level: 0
+    Level: 1
     Color: "\u8D64"
     Linkframe: null
     Buster: 0
     EffectText: null
-    DescribeText: "\u8EAB\u9577169cm\u3002\u8A18\u61B6\u55AA\u5931\u306E\u5C11\u5973\u3002\u82B1\u304C\u597D\u304D\u306A\u304A\u3063\u3068\u308A\u306E\u3093\u3073\u308A\u3055\u3093\u3002"
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u5973\u795E"
+    Feature2: "\u97F3\u697D"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-061.61
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-062
+    CardName: "\u6148\u611B\u306E\u4E59\u5973\u3000\u30A2\u30A6\u30ED\u30E9"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u5973\u795E"
+    Feature2: "\u97F3\u697D"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-062.62
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-063
+    CardName: "\u7948\u308A\u306E\u6B4C\u3000\u30A2\u30A6\u30ED\u30E9"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u5973\u795E"
+    Feature2: "\u97F3\u697D"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-063.63
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-064
+    CardName: "\u9858\u3044\u306E\u6B4C\u3000\u30A2\u30A6\u30ED\u30E9"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A9\u03A9\u03A9\uFF3D\u4ECE\u4F60\u7684\u5F03\u724C\u533A\u9009\u62E9\u4E00\u5F20\u8FDB\u5316\u8005\u56DE\u5230\u624B\u724C\uFF0C\u4E22\u5F03\u4E00\u5F20\u81EA\u5DF1\u7684\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u5973\u795E"
+    Feature2: "\u97F3\u697D"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-064.64
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-065
+    CardName: "\u6681\u306E\u4E59\u5973\u3000\u30A2\u30A6\u30ED\u30E9"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A9\u03A9\uFF3D\u4ECE\u4F60\u7684\u5F03\u724C\u533A\u9009\u62E9\u4E00\u5F20\u4E8C\u7EA7\u4EE5\u4E0B\u7684\u8FDB\u5316\u8005\u56DE\u5230\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u5973\u795E"
+    Feature2: "\u97F3\u697D"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-065.65
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-066
+    CardName: "\u899A\u9192\u3000\u30A2\u30A6\u30ED\u30E9"
+    Rare: R
+    Type: PG
+    Level: 5
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 1
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002&2#\u8FD9\u5F20\u5361\u767B\u573A\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u7EA2\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 11000
+    GuardPoint: 4000
+    Feature1: "\u5973\u795E"
+    Feature2: "\u97F3\u697D"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-066.66
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-067
+    CardName: "\u6226\u4E59\u5973\u3000\u30F4\u30A1\u30EC\u30EA\u30A2"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-067.67
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-068
+    CardName: "\u5929\u99AC\u306E\u9A0E\u58EB\u3000\u30F4\u30A1\u30EC\u30EA\u30A2"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-068.68
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-069
+    CardName: "\u79E9\u5E8F\u306E\u5B88\u8B77\u8005\u3000\u30F4\u30A1\u30EC\u30EA\u30A2"
+    Rare: R
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2462\u03A3\u03A3\uFF3D\u4ECE\u4F60\u7684\u5F03\u724C\u533A\u9009\u62E9\u4E00\u5F20\u56DB\u7EA7\u4EE5\u4E0B\u7684\u8FDB\u5316\u8005\uFF0C\u5728\u8FDB\u5316\u8005\u533A\u6A2A\u7F6E\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B8000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-069.69
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-070
+    CardName: "\u7720\u308C\u308B\u5996\u7CBE\u3000\u30F4\u30A3\u30F4\u30A3"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u7CBE\u970A"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-070.70
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-071
+    CardName: "\u4E0D\u601D\u8B70\u306A\u5996\u7CBE\u3000\u30F4\u30A3\u30F4\u30A3"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B8000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u7CBE\u970A"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-071.71
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-072
+    CardName: "\u6CC9\u306E\u5996\u7CBE\u3000\u30F4\u30A3\u30F4\u30A3"
+    Rare: U
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u7CBE\u970A"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-072.72
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-073
+    CardName: "\u7425\u73C0\u306E\u5996\u7CBE\u3000\u30A2\u30F3\u30D0\u30FC"
+    Rare: U
+    Type: PG
+    Level: 1
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E]\u5C06\u81EA\u5DF1\u724C\u5E93\u9876\u7AEF\u4E09\u5F20\u5361\u653E\u5165\u5F03\u724C\u533A\uFF0C\u9009\u62E9\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u5996\u7CBE"
+    Feature2: "\u5B9D\u77F3"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-073.73
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-074
+    CardName: "\u5C11\u5973\u5929\u4F7F\u3000\u30A2\u30F3\u30B8\u30A7\u30E9"
+    Rare: U
+    Type: PG
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A9\u03A9\u03A9\uFF3D\u4ECE\u4F60\u7684\u5F03\u724C\u533A\u9009\u62E9\u4E00\u5F20\u8FDB\u5316\u8005\u56DE\u5230\u624B\u724C\uFF0C\u4E22\u5F03\u4E00\u5F20\u81EA\u5DF1\u7684\u624B\u724C\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u5929\u4F7F"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-074.74
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-075
+    CardName: "\u7948\u308A\u306E\u5929\u4F7F\u3000\u30A2\u30F3\u30B8\u30A7\u30E9"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u7EA2\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u5929\u4F7F"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-075.75
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-076
+    CardName: "\u9858\u3044\u306E\u5929\u4F7F\u3000\u30A2\u30F3\u30B8\u30A7\u30E9"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u7EA2\u8272\u8FDB\u5316\u8005\u6709\u4E24\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u5929\u4F7F"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-076.76
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-077
+    CardName: "\u306F\u3050\u308C\u8005\u3000\u30BB\u30B7\u30C7\u30A3\u30C3\u30C8"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u5815\u5929\u4F7F"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-077.77
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-078
+    CardName: "\u5815\u5929\u4F7F\u3000\u30BB\u30B7\u30C7\u30A3\u30C3\u30C8"
+    Rare: C
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u5815\u5929\u4F7F"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-078.78
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-079
+    CardName: "\u5C0F\u3055\u306A\u5996\u7CBE\u3000\u30D5\u30ED\u30FC\u30EA\u30A2"
+    Rare: C
+    Type: PG
+    Level: 1
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E]\u62BD\u4E00\u5F20\u5361\uFF0C\u4E22\u5F03\u4E00\u5F20\u624B\u724C\uFF0C\u9009\u62E9\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u5996\u7CBE"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-079.79
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-080
+    CardName: "\u5E78\u305B\u306E\u904B\u3073\u624B\u3000\u30D5\u30ED\u30FC\u30EA\u30A2"
+    Rare: U
+    Type: PG
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A3\uFF3D\u5C06\u81EA\u5DF1\u724C\u5E93\u9876\u7AEF\u516D\u5F20\u5361\u653E\u5165\u5F03\u724C\u533A\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u5996\u7CBE"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-080.80
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-081
+    CardName: "\u5B9D\u77F3\u53CE\u96C6\u5BB6\u3000\u30D5\u30ED\u30FC\u30EA\u30A2"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u03A3\u03A3\u03A3\uFF3D\u5C06\u81EA\u5DF1\u724C\u5E93\u9876\u7AEF\u516D\u5F20\u5361\u653E\u5165\u5F03\u724C\u533A\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u5996\u7CBE"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-081.81
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-082
+    CardName: "\u82B1\u306E\u5996\u7CBE\u3000\u30D5\u30ED\u30FC\u30EA\u30A2"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2460\u03A9\u03A9\u03A9\u03A9\uFF3D\u7ED9\u4E88\u5BF9\u624B\u4E00\u70B9\u4F24\u5BB3\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u5996\u7CBE"
+    Feature2: "\u9B54\u6CD5"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-082.82
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-083
+    CardName: "\u68EE\u306E\u72E9\u4EBA\u3000\u30C7\u30A3\u30A2\u30F3\u30CA"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u795E"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-083.83
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-084
+    CardName: "\u92ED\u304D\u72E9\u4EBA\u3000\u30C7\u30A3\u30A2\u30F3\u30CA"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2461\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u795E"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-084.84
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-085
+    CardName: "\u4E09\u65E5\u6708\u306E\u5973\u795E\u3000\u30C7\u30A3\u30A2\u30F3\u30CA"
+    Rare: U
+    Type: PG
+    Level: 4
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u7EA2\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u3001\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u795E"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-085.85
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-086
+    CardName: "\u68EE\u306E\u8056\u5973\u3000\u30D5\u30A9\u30FC\u30EC\u30F3\u30C6\u30A3\u30FC\u30CA"
+    Rare: R
+    Type: PG
+    Level: 1
+    Color: "\u8D64"
+    Linkframe: "\u03A9"
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E\u3001\u6A2A\u7F6E\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF3D\u4ECE\u4F60\u7684\u5F03\u724C\u533A\u9009\u62E9\u4E00\u5F20\u8FDB\u5316\u8005\u56DE\u5230\u624B\u724C\uFF0C\u4E22\u5F03\u4E00\u5F20\u81EA\u5DF1\u7684\u624B\u724C\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u52D5\u7269"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-086.86
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-087
+    CardName: "\u30A4\u30F3\u30B8\u30A7\u30A4\u30F3\u30FB\u30D7\u30ED\u30C6\u30AF\u30C8"
+    Rare: C
+    Type: AC
+    Level: 0
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u9009\u62E9\u4F60\u7684\u4E24\u5F20\u7EA2\u8272\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u5DE8\u4EBA"
+    Feature2: "\u30A4\u30F3\u30B8\u30A7\u30A4\u30F3"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-087.87
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-088
+    CardName: "\u30AB\u30FC\u30D0\u30F3\u30AF\u30EB\u30FB\u30A2\u30A4\u30BA"
+    Rare: C
+    Type: AC
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u7EA2\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u30A8\u30EC\u30E1\u30F3\u30BF\u30EB"
+    Feature2: "\u30AB\u30FC\u30D0\u30F3\u30AF\u30EB"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-088.88
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-089
+    CardName: "\u30B7\u30EB\u30D5\u30A3\u30FC\u30C9\u30FB\u30AD\u30B9"
+    Rare: U
+    Type: AC
+    Level: 2
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\uFF3B\u6A2A\u7F6E\u81EA\u5DF1\u7684\u4E00\u5F20\u8FDB\u5316\u8005\uFF3D
+      \u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u652F\u4ED8\u4EE3\u4EF7\u3002\u652F\u4ED8\u540E\uFF0C\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u56DB\u7EA7\u4EE5\u4E0B\u8FDB\u5316\u8005\u653E\u7F6E\u5230\u724C\u5E93\u7684\u5E95\u7AEF\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u30A8\u30EC\u30E1\u30F3\u30BF\u30EB"
+    Feature2: "\u30B7\u30EB\u30D5\u30A3\u30FC\u30C9 "
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-089.89
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-090
+    CardName: "\u30ED\u30FC\u30EA\u30B9\u30FB\u30C9\u30ED\u30C3\u30D7"
+    Rare: C
+    Type: AC
+    Level: 1
+    Color: "\u8D64"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u4F60\u7684\u573A\u4E0A\u6709\u7EA2\u8272\u8FDB\u5316\u8005\u65F6\uFF0C\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u4E8C\u7EA7\u4EE5\u4E0B\u7684\u8FDB\u5316\u8005\u653E\u7F6E\u5230\u724C\u5E93\u7684\u5E95\u7AEF\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u30A8\u30EC\u30E1\u30F3\u30BF\u30EB"
+    Feature2: "\u30ED\u30FC\u30EA\u30B9"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-090.90
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-091
+    CardName: "\u6574\u5099\u58EB\u3000\u30A8\u30EB\u30BB\u30A2\uFF1D\u30A8\u30B3\u30EB\u30C0"
+    Rare: U
+    Type: PG
+    Level: 1
+    Color: "\u767D"
+    Linkframe: "\u03A9"
+    Buster: 0
+    EffectText: "3# [\u6A2A\u7F6E],\u4F60\u7684\u80FD\u91CF\u5361\u5168\u90E8\u6A2A\u7F6E\u65F6\uFF0C\u9009\u62E9\u4E00\u5F20\u4F60\u7684\u80FD\u91CF\u5361\u56DE\u5230\u82CF\u9192\u72B6\u6001\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u30A8\u30F3\u30B8\u30CB\u30A2"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-091.91
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-092
+    CardName: "\u65E7\u30BF\u30A4\u30D7\u3000\u30B3\u30FC\u30C9\uFF1D204\u30B1\u30A4\u30C6\u30A3"
+    Rare: R
+    Type: PG
+    Level: 1
+    Color: "\u767D"
+    Linkframe: "\u03A3"
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E\u3001\u6A2A\u7F6E\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF3D\u9009\u62E9\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF0C\u5BF9\u624B\u56DE\u5408\u7ED3\u675F\u524D\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u30A8\u30F3\u30B8\u30CB\u30A2"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-092.92
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-093
+    CardName: "\u30B3\u30FC\u30C9\u03A3\u30C1\u30AB\u30EB\u3000\u901A\u5E38\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u683C\u95D8"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-093.93
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-094
+    CardName: "\u30B3\u30FC\u30C9\u03A3\u30C1\u30AB\u30EB\u3000\u6226\u95D8\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2461\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u683C\u95D8"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-094.94
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-095
+    CardName: "\u30B3\u30FC\u30C9\u03A3\u30C1\u30AB\u30EB\u3000\u30D5\u30EB\u30D1\u30EF\u30FC\u30E2\u30FC\u30C9"
+    Rare: U
+    Type: PG
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u767D\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u683C\u95D8"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-095.95
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-096
+    CardName: "\u30B3\u30FC\u30C9\u03A341\u30AD\u30FC\u30F3\u3000\u6563\u7B56\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A3\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u52D5\u7269"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-096.96
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-097
+    CardName: "\u30B3\u30FC\u30C9\u03A341\u30AD\u30FC\u30F3\u3000\u5075\u5BDF\u30E2\u30FC\u30C9"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B8000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u52D5\u7269"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-097.97
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-098
+    CardName: "\u30B3\u30FC\u30C9\u03A341\u30AD\u30FC\u30F3\u3000\u89E3\u6790\u30E2\u30FC\u30C9"
+    Rare: R
+    Type: PG
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u767D\u8272\u8FDB\u5316\u8005\u6709\u4E24\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u52D5\u7269"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-098.98
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-099
+    CardName: "\u30B3\u30FC\u30C9\u03A9\u30E9\u30A6\u30E9\u3000\u5F85\u6A5F\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-099.99
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-100
+    CardName: "\u30B3\u30FC\u30C9\u03A9\u30E9\u30A6\u30E9\u3000\u6226\u95D8\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-100.100
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-101
+    CardName: "\u30B3\u30FC\u30C9\u03A9\u30E9\u30A6\u30E9\u3000\u6BB2\u6EC5\u30E2\u30FC\u30C9"
+    Rare: U
+    Type: PG
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2460\u03A3\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-101.101
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-102
+    CardName: "\u30B3\u30FC\u30C9\u03A931\u30AA\u30EA\u30AC\u3000\u901A\u5E38\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u30AA\u30D9\u30EC\u30FC\u30BF\u30FC"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-102.102
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-103
+    CardName: "\u30B3\u30FC\u30C9\u03A931\u30AA\u30EA\u30AC\u3000\u89E3\u6790\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u30AA\u30D9\u30EC\u30FC\u30BF\u30FC"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-103.103
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-104
+    CardName: "\u30B3\u30FC\u30C9\u03A946\u30BB\u30CB\u30A2\u3000\u8D77\u52D5\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 1
+    Color: "\u767D"
+    Linkframe: "\u03A3"
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-104.104
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-105
+    CardName: "\u30B3\u30FC\u30C9\u03A946\u30BB\u30CB\u30A2\u3000\u30B9\u30EA\u30FC\u30D7\u30E2\u30FC\u30C9"
+    Rare: C
+    Type: PG
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2461\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-105.105
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-106
+    CardName: "\u30B3\u30FC\u30C9\u03A946\u30BB\u30CB\u30A2\u3000\u6226\u95D8\u30E2\u30FC\u30C9"
+    Rare: U
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A9\u03A9\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B5000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-106.106
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-107
+    CardName: "\u30B3\u30FC\u30C9\u03A946\u30BB\u30CB\u30A2\u3000\u9AD8\u6A5F\u52D5\u30E2\u30FC\u30C9"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A3\u03A3\u03A3\uFF3D\u5BF9\u624B\u56DE\u5408\u7ED3\u675F\u524D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-107.107
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-108
+    CardName: "\u30B3\u30FC\u30C9\u03A946\u30BB\u30CB\u30A2\u3000\u30D5\u30EB\u30D0\u30FC\u30B9\u30C8"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2460\u03A3\u03A3\u03A9\uFF3D\u5BF9\u624B\u56DE\u5408\u7ED3\u675F\u524D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-108.108
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-109
+    CardName: "\u899A\u9192\u3000\u30B3\u30FC\u30C9\u03A946\u30BB\u30CB\u30A2"
+    Rare: R
+    Type: PG
+    Level: 5
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 1
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 8\u2010\u2463\uFF3D\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002&2#\u8FD9\u5F20\u5361\u767B\u573A\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u767D\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 11000
+    GuardPoint: 0
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u6B66\u5668"
+    Strike: 2
+    Illustrator: 
+    TextureResource: B1-109.109
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-110
+    CardName: "\u30BF\u30A4\u30D7HU-50\u30CB\u30CA\u3000\u304A\u6383\u9664\u30E2\u30FC\u30C9"
+    Rare: U
+    Type: PG
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u2460\u03A9\u03A9\uFF3D\u9009\u62E9\u4E00\u5F20\u81EA\u5DF1\u4F24\u5BB3\u533A\u91CC\u5411\u7684\u5361\uFF0C\u53D8\u56DE\u8868\u5411\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B6000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u30E1\u30A4\u30C9"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-110.110
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-111
+    CardName: "\u30BF\u30A4\u30D7HU-50\u30CB\u30CA\u3000\u304A\u6599\u7406\u30E2\u30FC\u30C9"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2463\uFF3D\u4F60\u7684\u767D\u8272\u8FDB\u5316\u8005\u6709\u56DB\u5F20\u4EE5\u4E0A\u65F6\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u8FDB\u5316\u8005\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u30E1\u30A4\u30C9"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-111.111
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-112
+    CardName: "\u30BF\u30A4\u30D7HU-50\u30CB\u30CA\u3000\u304A\u5C4A\u3051\u30E2\u30FC\u30C9"
+    Rare: SR
+    Type: PG
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u03A9\u03A9\u03A9\u03A9\uFF3D\u4ECE\u724C\u5E93\u6A2A\u7F6E\u80FD\u91CF\u5361\u653E\u5165\u80FD\u91CF\u533A\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u6BCF\u62E5\u6709\u4E00\u5F20\u80FD\u91CF\u5361\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B1000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
+    Feature2: "\u30E1\u30A4\u30C9"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-112.112
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-113
+    CardName: "\u7814\u7A76\u8005\u3000Dr.\u30DF\u30CF\u30A4\u30EB"
+    Rare: C
+    Type: PG
+    Level: 1
+    Color: "\u767D"
+    Linkframe: "\u03A9"
+    Buster: 0
+    EffectText: "3#[\u6A2A\u7F6E]\u9009\u62E9\u81EA\u5DF1\u4E00\u5F20\u5176\u4ED6\u7684\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B2000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u30E1\u30AC\u30CD"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-113.113
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-114
+    CardName: "\u63A2\u6C42\u8005\u3000Dr.\u30DF\u30CF\u30A4\u30EB"
+    Rare: U
+    Type: PG
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 5\u2010\u03A3\u03A3\u03A3\uFF3D\u5BF9\u624B\u56DE\u5408\u7ED3\u675F\u524D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 6000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u30E1\u30AC\u30CD"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-114.114
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-115
+    CardName: "\u6311\u6226\u8005\u3000Dr.\u30DF\u30CF\u30A4\u30EB"
+    Rare: R
+    Type: PG
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 6\u2010\u2460\u03A9\u03A9\uFF3D\u9009\u62E9\u4E00\u5F20\u81EA\u5DF1\u4F24\u5BB3\u533A\u91CC\u5411\u7684\u5361\uFF0C\u53D8\u56DE\u8868\u5411\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B4000\u3002"
+    DescribeText: 
+    Power: 8000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u30E1\u30AC\u30CD"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-115.115
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-116
+    CardName: "\u672A\u6765\u3092\u7D21\u3050\u8005\u3000Dr.\u30DF\u30CF\u30A4\u30EB"
+    Rare: SR
+    Type: AC
+    Level: 4
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u94FE\u63A5\u9636\u6BB5\u5F00\u59CB\u65F6\uFF3BLink 7\u2010\u2461\u03A3\u03A3\u03A3\uFF3D\u9009\u62E9\u4E00\u5F20\u81EA\u5DF1\u4F24\u5BB3\u533A\u7684\u5361\uFF0C\u653E\u5165\u5F03\u724C\u533A\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u8FD9\u5F20\u5361\u7684\u529B\u91CF\uFF0B8000\u3002"
+    DescribeText: 
+    Power: 10000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u30E1\u30AC\u30CD"
+    Strike: 1
+    Illustrator: 
+    TextureResource: B1-116.116
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-117
+    CardName: "\u30B5\u30A4\u30C8\u30FB\u30AE\u30A2"
+    Rare: C
+    Type: AC
+    Level: 1
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u4F60\u7684\u573A\u4E0A\u6709\u767D\u8272\u8FDB\u5316\u8005\u65F6\uFF0C\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u4E8C\u7EA7\u4EE5\u4E0B\u7684\u8FDB\u5316\u8005\u653E\u7F6E\u5230\u724C\u5E93\u9876\u7AEF\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u6A5F\u68B0"
+    Feature2: "\u30C7\u30D0\u30A4\u30B9"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-117.117
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-118
+    CardName: "\u30B8\u30A7\u30EA\u30FC\u30A8\u30F3\u30B8\u30A7\u30EB"
+    Rare: C
+    Type: AC
+    Level: 0
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u9009\u62E9\u4F60\u7684\u4E24\u5F20\u767D\u8272\u8FDB\u5316\u8005\uFF0C\u8FD9\u4E2A\u56DE\u5408\u4E2D\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u5408\u6210\u751F\u7269"
+    Feature2: "\u30B8\u30A7\u30EA\u30FC"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-118.118
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-119
+    CardName: "\u30B8\u30E3\u30DF\u30F3\u30B0\u30FB\u30D7\u30ED\u30B0\u30E9\u30E0"
+    Rare: U
+    Type: AC
+    Level: 3
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\uFF3B\u4E22\u5F03\u4E00\u5F20\u624B\u724C\uFF3D \u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u652F\u4ED8\u4EE3\u4EF7\u3002\u652F\u4ED8\u540E\uFF0C\u9009\u62E9\u5BF9\u624B\u4E00\u5F20\u56DB\u7EA7\u4EE5\u4E0B\u8FDB\u5316\u8005\u653E\u7F6E\u5230\u724C\u5E93\u9876\u7AEF\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u30A6\u30A3\u30EB\u30B9"
+    Feature2: " \u30D7\u30ED\u30B0\u30E9\u30E0"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-119.119
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-120
+    CardName: "\u30BD\u30CB\u30C3\u30AF\u30FB\u30B2\u30A4\u30EB"
+    Rare: C
+    Type: AC
+    Level: 2
+    Color: "\u767D"
+    Linkframe: null
+    Buster: 0
+    EffectText: "2#\u8FD9\u5F20\u5361\u5728\u884C\u52A8\u533A\u653E\u7F6E\u65F6,\u8FD9\u4E2A\u56DE\u5408\u4E2D\uFF0C\u4F60\u7684\u6240\u6709\u767D\u8272\u8FDB\u5316\u8005\u529B\u91CF\uFF0B3000\u3002"
+    DescribeText: 
+    Power: 0
+    GuardPoint: 4000
+    Feature1: "\u6A5F\u68B0"
+    Feature2: "\u30D0\u30A4\u30AF"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-120.120
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-121
+    CardName: "\u306F\u3058\u307E\u308A\u306E\u5C11\u5973"
+    Rare: C
+    Type: PG
+    Level: 0
+    Color: "\u9752"
+    Linkframe: "\u2200\u2200"
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u4EBA\u9593"
+    Feature2: "\u8D85\u80FD\u529B"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-121.121
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-122
+    CardName: "\u306F\u3058\u307E\u308A\u306E\u5C11\u5973"
+    Rare: C
+    Type: PG
+    Level: 0
+    Color: "\u9ED2"
+    Linkframe: "\u2200\u2200"
+    Buster: 0
+    EffectText: null
+    DescribeText: 
+    Power: 5000
+    GuardPoint: 4000
+    Feature1: "\u60AA\u9B54 "
+    Feature2: "\u9B54\u6CD5"
+    Strike: 0
+    Illustrator: 
+    TextureResource: B1-122.122
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-123
+    CardName: "\u306F\u3058\u307E\u308A\u306E\u5C11\u5973"
+    Rare: C
+    Type: PG
+    Level: 0
+    Color: "\u8D64"
+    Linkframe: "\u2200\u2200"
+    Buster: 0
+    EffectText: null
+    DescribeText: 
     Power: 5000
     GuardPoint: 4000
     Feature1: "\u5973\u795E"
     Feature2: "\u97F3\u697D"
     Strike: 0
-    Illustrator: "\u4E2D\u6751\u714C"
-    TextureResource: AVST1/S1-005
-    Serials: "\u7B2C1\u7AE0 \u904B\u547D\u9082\u9005\u306E\u56DB\u4E16\u754C"
-  - CardNo: S1-006
-    CardName: "\u30BB\u30CB\u30A2"
+    Illustrator: 
+    TextureResource: B1-123.123
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - CardNo: B1-124
+    CardName: "\u306F\u3058\u307E\u308A\u306E\u5C11\u5973"
     Rare: C
     Type: PG
     Level: 0
     Color: "\u767D"
-    Linkframe: null
+    Linkframe: "\u2200\u2200"
     Buster: 0
     EffectText: null
-    DescribeText: "\u8EAB\u9577145cm\u3002\u306A\u306B\u3082\u304B\u3082\u304C\u521D\u4F53\u9A13\u3002\u7D14\u7C8B\u7121\u57A2\u306A\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9\u3002"
+    DescribeText: 
     Power: 5000
     GuardPoint: 4000
     Feature1: "\u30A2\u30F3\u30C9\u30ED\u30A4\u30C9"
     Feature2: "\u6B66\u5668"
     Strike: 0
-    Illustrator: "\u4E2D\u6751\u714C"
-    TextureResource: AVST1/S1-006
-    Serials: "\u7B2C1\u7AE0 \u904B\u547D\u9082\u9005\u306E\u56DB\u4E16\u754C"
+    Illustrator: 
+    TextureResource: B1-124.124
+    Serials: "\u9752\u862D\u306E\u8056\u5C11\u5973"

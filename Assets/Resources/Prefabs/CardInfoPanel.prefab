@@ -6099,7 +6099,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3010
+  startingRenderQueue: 3009
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: -318, y: -171, z: 640, w: 262}
@@ -6724,7 +6724,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3010
+  startingRenderQueue: 3009
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 0, y: 0, z: 328, w: 244}
@@ -7678,7 +7678,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 13.1428576
   keepCrispWhenShrunk: 0
-  mTrueTypeFont: {fileID: 12800000, guid: 52e846d11dc80444699d8e0ce6d5f2ec, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: d781bacd68ff3c64ebdc273b31f67eb8, type: 3}
   mFont: {fileID: 0}
   mText: "\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2460\u03A3\u03A9\uFF3D
     \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B5000\u3002"
@@ -7759,7 +7759,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 6.57142878
   keepCrispWhenShrunk: 0
-  mTrueTypeFont: {fileID: 12800000, guid: 52e846d11dc80444699d8e0ce6d5f2ec, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: d781bacd68ff3c64ebdc273b31f67eb8, type: 3}
   mFont: {fileID: 0}
   mText: "\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2460\u03A3\u03A9\uFF3D
     \u305D\u306E\u30BF\u30FC\u30F3\u4E2D\u3001\u3053\u306E\u30AB\u30FC\u30C9\u306E\u30D1\u30EF\u30FC\u3092\uFF0B5000\u3002\u30EA\u30F3\u30AF\u2010\u30EA\u30F3\u30AF\u30B9\u30C6\u30C3\u30D7\u958B\u59CB\u6642\uFF3B\u30EA\u30F3\u30AF6\u2010\u2460\u03A3\u03A9\uFF3D
@@ -7964,7 +7964,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3010
+  startingRenderQueue: 3009
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}

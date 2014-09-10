@@ -105,7 +105,7 @@ public class CardInfoView : MonoBehaviour
 		foreach(MyCard card in cardlist)
 		{
 			rule1count += card.num;
-			if(card.info.Linkframe != "null")
+			if(card.info.Linkframe == "Σ" || card.info.Linkframe == "Ω")
 			{
 				rule2count += card.num;
 			}
@@ -118,21 +118,21 @@ public class CardInfoView : MonoBehaviour
 		{
 			rule1 += "[ff0000]";
 		}
-		rule1 += OTManager.instance.GetOT("GROUP_RULE_1", rule1count.ToString());
+		rule1 += OTManager.instance.GetOT("GROUP_RULE_C_1", rule1count.ToString());
 		txtGroupRule1.text = rule1;
 
 		if(rule2count != 16)
 		{
 			rule2 += "[ff0000]";
 		}
-		rule2 += OTManager.instance.GetOT("GROUP_RULE_2", rule2count.ToString());
+		rule2 += OTManager.instance.GetOT("GROUP_RULE_C_2", rule2count.ToString());
 		txtGroupRule2.text = rule2;
 		
 		if(rule3count != 4)
 		{
 			rule3 += "[ff0000]";
 		}
-		rule3 += OTManager.instance.GetOT("GROUP_RULE_3", rule3count.ToString());
+		rule3 += OTManager.instance.GetOT("GROUP_RULE_C_3", rule3count.ToString());
 		txtGroupRule3.text = rule3;
 		tableRule.Reposition();
 	}

@@ -28,7 +28,8 @@ public class CardDesc : MonoBehaviour
 		{
 			mCardInfo = info;
 			txtCardName.text = info.CardName;
-			Texture2D tex = Resources.Load(info.TextureResource) as Texture2D;
+			string imagepath = Resconfig.RES_CARD_IMAGE + info.TextureResource;
+			Texture2D tex = Resources.Load(imagepath) as Texture2D;
 			texCardImage.mainTexture = tex;
 			txtCardDes.text = FormatCardDes(info);
 			ShowCardEffect(info);

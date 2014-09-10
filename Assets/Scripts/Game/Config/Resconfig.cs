@@ -10,6 +10,7 @@ public class Resconfig
 	public const string RES_EDITOR = "/Editor/";
 	public const string RES_EDITOR_RENDER = "/Editor/Render/";
 	public const string RES_DATA_SCRIPT = "/Scripts/DatabaseScripts/";
+	public const string RES_CARD_IMAGE = "AngeCard/";
 
 	public const string RES_EXCEL_FILE_1 = "CardInfo.xlsx";
 
