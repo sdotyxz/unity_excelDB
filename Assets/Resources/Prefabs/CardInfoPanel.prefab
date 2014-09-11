@@ -4097,17 +4097,10 @@ MonoBehaviour:
   position: 0
   items:
   - '*'
-  - "\u30AA\u30FC\u30EB\u30B9\u30BF\u30FC\u30C7\u30C3\u30AD \u30AA\u30E1\u30AC"
-  - "\u30AA\u30FC\u30EB\u30B9\u30BF\u30FC\u30C7\u30C3\u30AD \u30B7\u30B0\u30DE"
-  - "\u7B2C4\u7AE0 \u84BC\u7A7A\u306E\u5909\u8EE2\u4E16\u754C"
-  - "3.5\u7AE0 \u5C11\u5973\u305F\u3061\u306E\u4F11\u65E5"
-  - "\u7B2C3\u7AE0 \u7D76\u5BFE\u9032\u5316\u306E\u5207\u672D\u305F\u3061"
-  - "2.5\u7AE0 \u7D14\u767D\u306E\u6A5F\u68B0\u5929\u4F7F"
-  - "\u7B2C2\u7AE0 \u9ED2\u304D\u591C\u306E\u5947\u8DE1"
-  - "\u7B2C1\u7AE0 \u9752\u862D\u306E\u8056\u5C11\u5973"
-  - "\u5E8F\u7AE0 \u904B\u547D\u9082\u9005\u306E\u56DB\u4E16\u754C"
-  - "\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3"
-  - "\u305D\u306E\u4ED6"
+  - "\u84BC\u7A7A\u306E\u5909\u8EE2\u4E16\u754C"
+  - "\u7D76\u5BFE\u9032\u5316\u306E\u5207\u672D\u305F\u3061"
+  - "\u9ED2\u304D\u591C\u306E\u5947\u8DE1"
+  - "\u9752\u862D\u306E\u8056\u5C11\u5973"
   padding: {x: 4, y: 4}
   textColor: {r: 0, g: 0, b: 0, a: .839215696}
   backgroundColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6099,7 +6092,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3008
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: -318, y: -171, z: 640, w: 262}
@@ -6407,7 +6400,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3023
+  startingRenderQueue: 3021
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 263, y: 33, z: 166, w: 278}
@@ -6724,7 +6717,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3008
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 0, y: 0, z: 328, w: 244}
@@ -7697,7 +7690,7 @@ MonoBehaviour:
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
   mSpacingX: 0
-  mSpacingY: 0
+  mSpacingY: 2
   mShrinkToFit: 0
   mMaxLineWidth: 0
   mMaxLineHeight: 0
@@ -7779,7 +7772,7 @@ MonoBehaviour:
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
   mSpacingX: 0
-  mSpacingY: 0
+  mSpacingY: 2
   mShrinkToFit: 0
   mMaxLineWidth: 0
   mMaxLineHeight: 0
@@ -7964,7 +7957,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3008
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -8021,23 +8014,23 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 302
-  mHeight: 16
+  mHeight: 18
   mDepth: 21
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 18.875
+  aspectRatio: 16.7777786
   keepCrispWhenShrunk: 0
-  mTrueTypeFont: {fileID: 12800000, guid: 52e846d11dc80444699d8e0ce6d5f2ec, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: d781bacd68ff3c64ebdc273b31f67eb8, type: 3}
   mFont: {fileID: 0}
-  mText: New Label
+  mText: 
   mFontSize: 16
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
-  mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectStyle: 2
+  mEffectColor: {r: .0261678118, g: .0775430128, b: .161764681, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 3
@@ -8045,8 +8038,8 @@ MonoBehaviour:
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mSpacingX: 0
-  mSpacingY: 0
+  mSpacingX: 1
+  mSpacingY: 2
   mShrinkToFit: 0
   mMaxLineWidth: 0
   mMaxLineHeight: 0
@@ -8083,23 +8076,23 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 302
-  mHeight: 16
+  mHeight: 18
   mDepth: 21
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 18.875
+  aspectRatio: 16.7777786
   keepCrispWhenShrunk: 0
-  mTrueTypeFont: {fileID: 12800000, guid: 52e846d11dc80444699d8e0ce6d5f2ec, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: d781bacd68ff3c64ebdc273b31f67eb8, type: 3}
   mFont: {fileID: 0}
-  mText: New Label
+  mText: 
   mFontSize: 16
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
-  mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectStyle: 2
+  mEffectColor: {r: .0261678118, g: .0775430128, b: .161764681, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 3
@@ -8107,8 +8100,8 @@ MonoBehaviour:
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mSpacingX: 0
-  mSpacingY: 0
+  mSpacingX: 1
+  mSpacingY: 2
   mShrinkToFit: 0
   mMaxLineWidth: 0
   mMaxLineHeight: 0
@@ -8145,23 +8138,23 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
   mWidth: 302
-  mHeight: 16
+  mHeight: 18
   mDepth: 21
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 18.875
+  aspectRatio: 16.7777786
   keepCrispWhenShrunk: 0
-  mTrueTypeFont: {fileID: 12800000, guid: 52e846d11dc80444699d8e0ce6d5f2ec, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: d781bacd68ff3c64ebdc273b31f67eb8, type: 3}
   mFont: {fileID: 0}
-  mText: New Label
+  mText: 
   mFontSize: 16
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
-  mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectStyle: 2
+  mEffectColor: {r: .0261678118, g: .0775430128, b: .161764681, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 3
@@ -8169,8 +8162,8 @@ MonoBehaviour:
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mSpacingX: 0
-  mSpacingY: 0
+  mSpacingX: 1
+  mSpacingY: 2
   mShrinkToFit: 0
   mMaxLineWidth: 0
   mMaxLineHeight: 0

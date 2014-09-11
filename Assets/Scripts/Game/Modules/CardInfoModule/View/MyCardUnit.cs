@@ -56,7 +56,8 @@ public class MyCardUnit : MonoBehaviour
 		if(myCard != card)
 		{
 			myCard = card;
-			string imagepath = Resconfig.RES_CARD_IMAGE + card.info.TextureResource;
+			string[] namepre = card.info.CardNo.Split('-');
+			string imagepath = Resconfig.RES_CARD_IMAGE + namepre[0] + "/" + card.info.CardNo + "." + card.info.ResourceID;
 			Texture2D tex = Resources.Load(imagepath) as Texture2D;
 			texCardImage.mainTexture = tex;
 			txtCardNum.text = myCard.num.ToString();

@@ -28,7 +28,8 @@ public class CardDesc : MonoBehaviour
 		{
 			mCardInfo = info;
 			txtCardName.text = info.CardName;
-			string imagepath = Resconfig.RES_CARD_IMAGE + info.TextureResource;
+			string[] namepre = info.CardNo.Split('-');
+			string imagepath = Resconfig.RES_CARD_IMAGE + namepre[0] + "/" + info.CardNo + "." + info.ResourceID;
 			Texture2D tex = Resources.Load(imagepath) as Texture2D;
 			texCardImage.mainTexture = tex;
 			txtCardDes.text = FormatCardDes(info);
@@ -55,7 +56,7 @@ public class CardDesc : MonoBehaviour
 				effectlist[i].txtEffectDes.text = effecttext;
 			}
 		}
-		txtDes.text = "\n" + info.DescribeText;
+		if(info.DescribeText != "null") txtDes.text = "\n" + info.DescribeText;
 		tableEffect.Reposition();
 	}
 
@@ -74,7 +75,7 @@ public class CardDesc : MonoBehaviour
 			carddes += "Frame:" + info.Linkframe + "\n";
 		}
 		carddes += "Strike:" + info.Strike.ToString() + "\n";
-		carddes += info.Feature1 + "/" + info.Feature2 + "\n";
+		carddes += info.Feature + "\n";
 		return carddes;
 	}
 }

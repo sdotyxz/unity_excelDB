@@ -18,11 +18,10 @@ namespace Config
 		public string DescribeText;
 		public int Power;
 		public int GuardPoint;
-		public string Feature1;
-		public string Feature2;
+		public string Feature;
 		public int Strike;
 		public string Illustrator;
-		public string TextureResource;
+		public int ResourceID;
 		public string Serials;
 	}
 }
