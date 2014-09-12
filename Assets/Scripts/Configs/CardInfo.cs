@@ -13,7 +13,7 @@ namespace Config
 		public int Level;
 		public string Color;
 		public string Linkframe;
-		public int Buster;
+		public int Boost;
 		public string EffectText;
 		public string DescribeText;
 		public int Power;
