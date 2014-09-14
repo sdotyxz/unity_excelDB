@@ -2123,7 +2123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 178, z: 0}
+  m_LocalPosition: {x: -29, y: 178, z: 0}
   m_LocalScale: {x: 1.00010896, y: 1.00010896, z: 1.00010896}
   m_Children: []
   m_Father: {fileID: 400128}
@@ -2145,7 +2145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 189, z: 0}
+  m_LocalPosition: {x: -28, y: 189, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400128}
@@ -2323,7 +2323,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 114.316887, y: -12.238306, z: 0}
+  m_LocalPosition: {x: 243.525772, y: -12.238306, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400102}
@@ -2358,7 +2358,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100118}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: -4.37113883e-08}
-  m_LocalPosition: {x: 377.555878, y: 43.513382, z: 0}
+  m_LocalPosition: {x: 318.400024, y: 43.513382, z: 0}
   m_LocalScale: {x: .999950051, y: .999950051, z: .999950051}
   m_Children:
   - {fileID: 400116}
@@ -2420,7 +2420,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18, y: -194, z: 0}
+  m_LocalPosition: {x: 235, y: -191, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400082}
@@ -2687,7 +2687,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 377.555878, y: 3.29728699, z: 0}
+  m_LocalPosition: {x: 318.400024, y: 3.29728699, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400128}
@@ -2698,7 +2698,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 377.555878, y: -36.702713, z: 0}
+  m_LocalPosition: {x: 318.400024, y: -36.7026978, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400174}
@@ -3260,7 +3260,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  mTexture: {fileID: 2800000, guid: 1778a8650b1df82479acbf38578012f5, type: 3}
+  mTexture: {fileID: 2800000, guid: 5cfc31bd92d3a412998f5f72d782f127, type: 3}
   mMat: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
 --- !u!114 &11400008
@@ -4101,6 +4101,12 @@ MonoBehaviour:
   - "\u7D76\u5BFE\u9032\u5316\u306E\u5207\u672D\u305F\u3061"
   - "\u9ED2\u304D\u591C\u306E\u5947\u8DE1"
   - "\u9752\u862D\u306E\u8056\u5C11\u5973"
+  - "\u5C11\u5973\u305F\u3061\u306E\u4F11\u65E5"
+  - "\u30D7\u30ED\u30E2\u30FC\u30B7\u30E7\u30F3\u30AB\u30FC\u30C9"
+  - "\u904B\u547D\u9082\u9005\u306E\u56DB\u4E16\u754C"
+  - "\u7D14\u767D\u306E\u6A5F\u68B0\u5929\u4F7F"
+  - "\u30AA\u30FC\u30EB\u30B9\u30BF\u30FC\u30C7\u30C3\u30AD \u30AA\u30E1\u30AC"
+  - "\u30AA\u30FC\u30EB\u30B9\u30BF\u30FC\u30C7\u30C3\u30AD \u30B7\u30B0\u30DE"
   padding: {x: 4, y: 4}
   textColor: {r: 0, g: 0, b: 0, a: .839215696}
   backgroundColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5349,13 +5355,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .117647052, g: .108131483, b: .108131483, a: 1}
   mPivot: 4
-  mWidth: 868
+  mWidth: 810
   mHeight: 74
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 11.7297297
+  aspectRatio: 10.9459457
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Stripes 2
   mType: 2
@@ -5461,13 +5467,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .400000006, g: .400000006, b: .400000006, a: 1}
   mPivot: 4
-  mWidth: 900
+  mWidth: 844
   mHeight: 128
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.03125
+  aspectRatio: 6.59375
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Window
   mType: 1
@@ -6400,7 +6406,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3021
+  startingRenderQueue: 3022
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 263, y: 33, z: 166, w: 278}
