@@ -22,6 +22,8 @@ public class CardInfoView : MonoBehaviour
 	public UILabel txtGroupRule2;
 	public UILabel txtGroupRule3;
 	public UITable tableRule;
+
+	private int storagesize = 80;
 	
 
 	void Start()
@@ -31,29 +33,32 @@ public class CardInfoView : MonoBehaviour
 		Pool.GetComponent<UIEventListener>(btnSaveGroup).onClick = OnClickbtnSaveGroup;
 		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
 		UpdateGroupList();
-		cardStorage.Build(54);
+		cardStorage.Build(storagesize);
 	}
 
 	void OnClickbtnAddCard (GameObject go)
 	{
-		if(carddesc.cardinfo != null)
+		if(tempcardlist.Count < storagesize)
 		{
-			int index = tempcardlist.FindIndex(e => e.info.CardNo == carddesc.cardinfo.CardNo);
-			if(index != -1)
+			if(carddesc.cardinfo != null)
 			{
-				if(tempcardlist[index].num <4)
+				int index = tempcardlist.FindIndex(e => e.info.CardNo == carddesc.cardinfo.CardNo);
+				if(index != -1)
 				{
-					tempcardlist[index].num++;
+					if(tempcardlist[index].num <4)
+					{
+						tempcardlist[index].num++;
+					}
+				}
+				else
+				{
+					MyCard card = new MyCard(carddesc.cardinfo, 1);
+					tempcardlist.Add(card);
 				}
 			}
-			else
-			{
-				MyCard card = new MyCard(carddesc.cardinfo, 1);
-				tempcardlist.Add(card);
-			}
+			cardStorage.Fill(tempcardlist);
+			CheckGroupRule(tempcardlist);
 		}
-		cardStorage.Fill(tempcardlist);
-		CheckGroupRule(tempcardlist);
 	}
 
 	private void OnClickbtnSaveGroup(GameObject go)
@@ -105,7 +110,7 @@ public class CardInfoView : MonoBehaviour
 		foreach(MyCard card in cardlist)
 		{
 			rule1count += card.num;
-			if(card.info.Linkframe == "Σ" || card.info.Linkframe == "Ω")
+			if(card.info.Frame == "S" || card.info.Frame == "O")
 			{
 				rule2count += card.num;
 			}
@@ -174,5 +179,6 @@ public class CardInfoView : MonoBehaviour
 			}
 		}
 		cardStorage.Fill(tempcardlist);
+		CheckGroupRule(tempcardlist);
 	}
 }
