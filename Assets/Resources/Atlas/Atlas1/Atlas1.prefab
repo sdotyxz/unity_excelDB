@@ -47,8 +47,8 @@ MonoBehaviour:
     height: 19
     borderLeft: 20
     borderRight: 20
-    borderTop: 9
-    borderBottom: 10
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 1

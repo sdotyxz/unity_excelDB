@@ -10,6 +10,7 @@ public class CardInfoView : MonoBehaviour
 	public CardStorage cardStorage;
 	public CardGroupStorage groupStorage;
 
+	public UIButton btnScreenshot;
 	public UIButton btnAddCard;
 	public UIButton btnSaveGroup;
 	public UIButton btnDeleteGroup;
@@ -28,12 +29,27 @@ public class CardInfoView : MonoBehaviour
 
 	void Start()
 	{
+		Pool.GetComponent<UIEventListener>(btnScreenshot).onClick = OnClickbtnScreenShot;
+
 		Pool.GetComponent<UIEventListener>(btnAddCard).onClick = OnClickbtnAddCard;
 		Pool.GetComponent<UIEventListener>(btnDeleteGroup).onClick = OnClickbtnDeleteGroup;
 		Pool.GetComponent<UIEventListener>(btnSaveGroup).onClick = OnClickbtnSaveGroup;
 		gameDataManager = GameObject.Find("GameDataManager").GetComponent<GameDataManager>();
 		UpdateGroupList();
 		cardStorage.Build(storagesize);
+	}
+
+	void OnClickbtnScreenShot (GameObject go)
+	{
+		Application.CaptureScreenshot("test.png");
+	}
+
+	void Update()
+	{
+		if(Input.GetKeyDown("a"))
+		{
+			OnClickbtnAddCard(null);
+		}
 	}
 
 	void OnClickbtnAddCard (GameObject go)

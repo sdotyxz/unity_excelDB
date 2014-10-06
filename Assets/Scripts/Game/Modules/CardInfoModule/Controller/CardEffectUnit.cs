@@ -6,5 +6,12 @@ public class CardEffectUnit : MonoBehaviour
 	public UISprite spEffectDes;
 	public UILabel txtEffectDes;
 
+	public void UpdateEffect(string effect)
+	{
+		string[] effectdes = effect.Split('#');
+		string effecttext = effectdes[1];
+		spEffectDes.spriteName = "EF_" + effectdes[0];
+		txtEffectDes.text = effecttext;
+	}
 
 }

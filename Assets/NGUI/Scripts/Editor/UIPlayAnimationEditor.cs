@@ -3,10 +3,6 @@
 // Copyright © 2011-2014 Tasharen Entertainment
 //----------------------------------------------
 
-#if !UNITY_3_5 && !UNITY_4_0 && !UNITY_4_1 && !UNITY_4_2
-#define USE_MECANIM
-#endif
-
 using UnityEngine;
 using UnityEditor;
 
@@ -15,8 +11,8 @@ public class UIPlayAnimationEditor : Editor
 {
 	enum ResetOnPlay
 	{
-		Continue,
-		StartFromBeginning,
+		ContinueFromCurrent,
+		RestartAnimation,
 	}
 
 	enum SelectedObject
@@ -33,38 +29,27 @@ public class UIPlayAnimationEditor : Editor
 
 		GUI.changed = false;
 
-#if USE_MECANIM
 		EditorGUI.BeginDisabledGroup(pa.target);
 		Animator animator = (Animator)EditorGUILayout.ObjectField("Animator", pa.animator, typeof(Animator), true);
 		EditorGUI.EndDisabledGroup();
 		EditorGUI.BeginDisabledGroup(pa.animator);
-#endif
 		Animation anim = (Animation)EditorGUILayout.ObjectField("Animation", pa.target, typeof(Animation), true);
 
-#if USE_MECANIM
 		EditorGUI.EndDisabledGroup();
 		EditorGUI.BeginDisabledGroup(anim == null && animator == null);
 		string clipName = EditorGUILayout.TextField("State Name", pa.clipName);
-#else
-		EditorGUI.BeginDisabledGroup(anim == null);
-		string clipName = EditorGUILayout.TextField("Clip Name", pa.clipName);
-#endif
 
 		AnimationOrTween.Trigger trigger = (AnimationOrTween.Trigger)EditorGUILayout.EnumPopup("Trigger condition", pa.trigger);
 
-#if USE_MECANIM
 		EditorGUI.BeginDisabledGroup(animator != null && !string.IsNullOrEmpty(clipName));
 		AnimationOrTween.Direction dir = (AnimationOrTween.Direction)EditorGUILayout.EnumPopup("Play direction", pa.playDirection);
 		EditorGUI.EndDisabledGroup();
-#else
-		AnimationOrTween.Direction dir = (AnimationOrTween.Direction)EditorGUILayout.EnumPopup("Play direction", pa.playDirection);
-#endif
 
 		SelectedObject so = pa.clearSelection ? SelectedObject.SetToNothing : SelectedObject.KeepCurrent;
 		bool clear = (SelectedObject)EditorGUILayout.EnumPopup("Selected object", so) == SelectedObject.SetToNothing;
 		AnimationOrTween.EnableCondition enab = (AnimationOrTween.EnableCondition)EditorGUILayout.EnumPopup("If disabled on start", pa.ifDisabledOnPlay);
-		ResetOnPlay rs = pa.resetOnPlay ? ResetOnPlay.StartFromBeginning : ResetOnPlay.Continue;
-		bool reset = (ResetOnPlay)EditorGUILayout.EnumPopup("If already playing", rs) == ResetOnPlay.StartFromBeginning;
+		ResetOnPlay rs = pa.resetOnPlay ? ResetOnPlay.RestartAnimation : ResetOnPlay.ContinueFromCurrent;
+		bool reset = (ResetOnPlay)EditorGUILayout.EnumPopup("On activation", rs) == ResetOnPlay.RestartAnimation;
 		AnimationOrTween.DisableCondition dis = (AnimationOrTween.DisableCondition)EditorGUILayout.EnumPopup("When finished", pa.disableWhenFinished);
 		EditorGUI.EndDisabledGroup();
 
@@ -72,9 +57,7 @@ public class UIPlayAnimationEditor : Editor
 		{
 			NGUIEditorTools.RegisterUndo("PlayAnimation Change", pa);
 			pa.target = anim;
-#if USE_MECANIM
 			pa.animator = animator;
-#endif
 			pa.clipName = clipName;
 			pa.trigger = trigger;
 			pa.playDirection = dir;
