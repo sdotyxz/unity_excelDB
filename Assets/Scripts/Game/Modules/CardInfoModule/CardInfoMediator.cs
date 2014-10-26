@@ -29,6 +29,10 @@ public class CardInfoMediator : Mediator
 
            GameObject go = _scene.birthPos.gameObject;
            _UI = go.GetComponent<CardInfoView>();
+		if(_UI != null)
+		{
+			_UI.searchField.UpdateSearchField();
+		}
     }
 
     public override IList<string> ListNotificationInterests()
@@ -46,13 +50,13 @@ public class CardInfoMediator : Mediator
         switch (notification.Name)
         {
 		case CardInfoNotes.CARDINFO_SHOW_INFO:
-			OnShowInfo((CardInfo)notification.Body);
+			OnShowInfo((cfgcard)notification.Body);
 			break;
 		case CardInfoNotes.CARDINFO_SHOW_GROUP:
 			OnShowGroup((CardGroup)notification.Body);
 			break;
 		case CardInfoNotes.CARDINFO_REMOVE_CARD:
-			OnRemoveInfo((CardInfo)notification.Body);
+			OnRemoveInfo((string)notification.Body);
 			break;
             default:
                 break;
@@ -66,19 +70,19 @@ public class CardInfoMediator : Mediator
 		}
 	}
 
-	void OnShowInfo (CardInfo cardInfo)
+	void OnShowInfo (cfgcard cfg)
 	{
 		if(_UI != null)
 		{
-			_UI.ShowCard(cardInfo);
+			_UI.ShowCard(cfg);
 		}
 	}
 
-	void OnRemoveInfo (CardInfo cardInfo)
+	void OnRemoveInfo (string cardno)
 	{
 		if(_UI != null)
 		{
-			_UI.RemoveMyCard(cardInfo);
+			_UI.RemoveMyCard(cardno);
 		}
 	}
 

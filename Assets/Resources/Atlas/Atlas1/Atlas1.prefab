@@ -27,6 +27,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,7 +68,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color1
-    x: 333
+    x: 366
     y: 212
     width: 10
     height: 16
@@ -80,19 +81,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_icon_color2
-    x: 344
-    y: 212
-    width: 10
-    height: 16
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: card_icon_color3
     x: 355
     y: 212
     width: 10
@@ -105,8 +93,34 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: card_icon_color3
+    x: 344
+    y: 212
+    width: 10
+    height: 16
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: card_icon_color4
-    x: 366
+    x: 333
+    y: 212
+    width: 10
+    height: 16
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: card_icon_color5
+    x: 377
     y: 212
     width: 10
     height: 16
@@ -120,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: card-add_btn_add
     x: 0
-    y: 6
+    y: 35
     width: 155
     height: 28
     borderLeft: 0
@@ -133,7 +147,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: card-add_btn_add_dis
     x: 0
-    y: 35
+    y: 6
     width: 155
     height: 28
     borderLeft: 0
@@ -171,7 +185,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EF_1
-    x: 333
+    x: 408
     y: 229
     width: 14
     height: 14
@@ -184,7 +198,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EF_2
-    x: 348
+    x: 393
     y: 229
     width: 14
     height: 14
@@ -197,7 +211,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EF_3
-    x: 363
+    x: 378
     y: 229
     width: 14
     height: 14
@@ -209,6 +223,45 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: icon_ji
+    x: 363
+    y: 229
+    width: 14
+    height: 14
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 1
+  - name: icon_jyou
+    x: 348
+    y: 229
+    width: 14
+    height: 14
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 1
+  - name: icon_ki
+    x: 333
+    y: 229
+    width: 14
+    height: 14
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 1
   - name: publish-deck_ec-cursor
     x: 156
     y: 26
@@ -276,7 +329,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: thic_link
     x: 286
-    y: 25
+    y: 12
     width: 35
     height: 12
     borderLeft: 0
@@ -315,7 +368,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: thic_power
     x: 286
-    y: 12
+    y: 25
     width: 35
     height: 12
     borderLeft: 0

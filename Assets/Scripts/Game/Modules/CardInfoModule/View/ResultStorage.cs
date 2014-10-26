@@ -18,13 +18,13 @@ public class ResultStorage : CommonStorage
 		resultlist = new List<CardInfoUnit>();
 	}
 
-	public void Fill(List<CardInfo> infolist)
+	public void Fill(List<cfgcard> cfglist)
 	{
 		HideAllSlot();
-		for(int i = 0; i < infolist.Count; i ++)
+		for(int i = 0; i < cfglist.Count; i++)
 		{
 			resultlist[i].gameObject.SetActive(true);
-			resultlist[i].UpdateCardInfo(infolist[i]);
+			resultlist[i].UpdateCardInfo(cfglist[i]);
 		}
 	}
 }

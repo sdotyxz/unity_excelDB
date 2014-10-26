@@ -17,6 +17,8 @@ public class CardInfoUnit : MonoBehaviour
 
 	private CardInfo mCardInfo;
 
+	private cfgcard _cfg;
+
 	public UIButton btnUnit;
 
 	void Start()
@@ -26,50 +28,24 @@ public class CardInfoUnit : MonoBehaviour
 
 	void OnClickUnit (GameObject go)
 	{
-		Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_SHOW_INFO, mCardInfo);
+		if(_cfg != null)
+			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_SHOW_INFO, _cfg);
 	}
 
-	public void UpdateCardInfo(CardInfo info)
+	public void UpdateCardInfo(cfgcard cfg)
 	{
-		if(mCardInfo != info)
+		if(_cfg != cfg)
 		{
-			mCardInfo = info;
-			spColor.spriteName = CalCardColorString(mCardInfo);
-			txtNo.text = mCardInfo.CardNo;
-			txtName.text = mCardInfo.CardName;
-			string frame = mCardInfo.Linkframe;
-			if(frame == "null") frame = "  ";
-			txtType.text = mCardInfo.Type;
-			txtLevel.text = mCardInfo.Level.ToString();
-			txtFrame.text = frame;
-			txtPower.text = mCardInfo.Power.ToString();
-			txtGuard.text = mCardInfo.GuardPoint.ToString();
+			_cfg = cfg;
+			spColor.spriteName = CardInfoManager.instance.CalCardColorString(_cfg);
+			txtNo.text = _cfg.no;
+			txtName.text = _cfg.name; 
+			string frame = _cfg.frame;
+			txtFrame.text = frame != "null" ? frame : "";
+			txtType.text = _cfg.kind;
+			txtLevel.text = _cfg.level.ToString();
+			txtPower.text = _cfg.power.ToString();
+			txtGuard.text = _cfg.guard.ToString();
 		}
 	}
-
-	private string CalCardColorString(CardInfo info)
-	{
-		string color = "card_icon_color";
-		if(info != null)
-		{
-			if(info.Color == OTManager.instance.GetOT("CARD_COLOR_1"))
-			{
-				color += "1";
-			}
-			else if (info.Color == OTManager.instance.GetOT("CARD_COLOR_2"))
-			{
-				color += "2";
-			}
-			else if (info.Color == OTManager.instance.GetOT("CARD_COLOR_3"))
-			{
-				color += "3";
-			}
-			else if (info.Color == OTManager.instance.GetOT("CARD_COLOR_4"))
-			{
-				color += "4";
-			}
-		}
-		return color;
-	}
-
 }

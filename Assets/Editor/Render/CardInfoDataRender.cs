@@ -28,7 +28,6 @@ class CardInfoDataRender
 				CardInfo info = new CardInfo();
 				for(int c = 0; c < columnnum; c++)
 				{
-					Debug.Log(t.ToString() + "-" + r.ToString() + "-" + c.ToString());
 					FieldInfo field = info.GetType().GetField(datasource.Tables[t].Rows[0][c].ToString());
 					Type type = field.FieldType;
 					object columnvalue = Convert.ChangeType(datasource.Tables[t].Rows[r][c], type);

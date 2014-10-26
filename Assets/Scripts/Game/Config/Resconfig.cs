@@ -15,5 +15,6 @@ public class Resconfig
 	public const string RES_EXCEL_FILE_1 = "CardInfo.xlsx";
 
 	public const string CONFIG_CARDINFO = "Config.CardInfoDataEntity";
+	public const string CONIFG_CARDCFG = "Config.cfgcardDataEntity";
 
 }

@@ -5,15 +5,16 @@ using PureMVC.Patterns;
 
 public class MyCard
 {
-	public CardInfo info;
+	public string no;
+	public cfgcard cardcfg { get { return CardInfoManager.instance.GetCardCfgByNo(no); } }
 	public int num;
 
 	public MyCard()
 	{}
 
-	public MyCard(CardInfo cardinfo , int cardnum)
+	public MyCard(string cardno , int cardnum)
 	{
-		info = cardinfo;
+		no = cardno;
 		num = cardnum;
 	}
 }
@@ -28,6 +29,7 @@ public class MyCardUnit : MonoBehaviour
 	private CardInfo myCardInfo;
 
 	private MyCard myCard;
+	public MyCard Card { get { return myCard; } }
 
 	void Start()
 	{
@@ -39,7 +41,7 @@ public class MyCardUnit : MonoBehaviour
 	{
 		if(myCard != null)
 		{
-			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_SHOW_INFO, myCard.info);
+			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_SHOW_INFO, myCard.cardcfg);
 		}
 	}
 
@@ -47,7 +49,7 @@ public class MyCardUnit : MonoBehaviour
 	{
 		if(myCard != null)
 		{
-			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_REMOVE_CARD, myCard.info);
+			Facade.Instance.SendNotification(CardInfoNotes.CARDINFO_REMOVE_CARD, myCard.no);
 		}
 	}
 
@@ -56,8 +58,8 @@ public class MyCardUnit : MonoBehaviour
 		if(myCard != card)
 		{
 			myCard = card;
-			string[] namepre = card.info.CardNo.Split('-');
-			string imagepath = Resconfig.RES_CARD_IMAGE + namepre[0] + "/" + card.info.CardNo + "." + card.info.ResourceID;
+			string[] namepre = myCard.no.Split('-');
+			string imagepath = Resconfig.RES_CARD_IMAGE + namepre[0] + "/" + card.cardcfg.img;
 			Texture2D tex = Resources.Load(imagepath) as Texture2D;
 			texCardImage.mainTexture = tex;
 			txtCardNum.text = myCard.num.ToString();

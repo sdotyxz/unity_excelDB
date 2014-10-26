@@ -12,5 +12,7 @@ public class DataRender : ScriptableObject {
 		AssetUtility.Init();
 		CardInfoDataEntity cardinfodata = CardInfoDataRender.Render();
 		AssetUtility.CreateAsset<CardInfoDataEntity>(cardinfodata);
+		cfgcardDataEntity cfgcarddata = cfgcardDataRender.Render();
+		AssetUtility.CreateAsset<cfgcardDataEntity>(cfgcarddata);
 	}
 }

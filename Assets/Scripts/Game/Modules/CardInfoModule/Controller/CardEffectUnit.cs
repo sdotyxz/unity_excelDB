@@ -14,4 +14,10 @@ public class CardEffectUnit : MonoBehaviour
 		txtEffectDes.text = effecttext;
 	}
 
+	public void UpdateEffect(CardEffect effect)
+	{
+		spEffectDes.spriteName = "icon_" + effect.type;
+		spEffectDes.MakePixelPerfect();
+		txtEffectDes.text = effect.des;
+	}
 }
