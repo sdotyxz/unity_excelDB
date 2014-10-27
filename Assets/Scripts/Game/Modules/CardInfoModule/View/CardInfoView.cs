@@ -246,7 +246,7 @@ public class CardInfoView : MonoBehaviour
 			{
 				rule2count += card.num;
 			}
-			if(card.cardcfg.level == 0)
+			if(card.cardcfg.level == 0 && card.cardcfg.kind == "PG")
 			{
 				rule3count += card.num;
 			}
